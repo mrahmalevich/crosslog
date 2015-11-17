@@ -1,0 +1,72 @@
+PODS:
+  - Alamofire (3.0.1)
+  - Bolts (1.3.0):
+    - Bolts/AppLinks (= 1.3.0)
+    - Bolts/Tasks (= 1.3.0)
+  - Bolts/AppLinks (1.3.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.3.0)
+  - FBSDKCoreKit (4.7.0):
+    - Bolts (~> 1.1)
+    - FBSDKCoreKit/arc (= 4.7.0)
+    - FBSDKCoreKit/no-arc (= 4.7.0)
+  - FBSDKCoreKit/arc (4.7.0):
+    - Bolts (~> 1.1)
+  - FBSDKCoreKit/no-arc (4.7.0):
+    - Bolts (~> 1.1)
+    - FBSDKCoreKit/arc
+  - FLEX (2.1.0)
+  - HockeySDK (3.8.2):
+    - HockeySDK/AllFeaturesLib (= 3.8.2)
+  - HockeySDK/AllFeaturesLib (3.8.2)
+  - MagicalRecord (2.3.0)
+  - MBProgressHUD (0.9.1)
+  - MD5Digest (1.0.1)
+  - Parse (1.9.0):
+    - Bolts/Tasks (>= 1.3.0)
+  - pop (1.0.8)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+  - SnapKit (0.15.0)
+  - SwiftyJSON (2.3.0)
+  - TTTAttributedLabel (1.13.4)
+  - UIImage+BlurredFrame (0.0.4)
+  - VK-ios-sdk (1.2.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - FBSDKCoreKit
+  - FLEX (~> 2.0)
+  - HockeySDK
+  - MagicalRecord
+  - MBProgressHUD
+  - MD5Digest
+  - Parse
+  - pop
+  - SDWebImage
+  - SnapKit
+  - SwiftyJSON
+  - TTTAttributedLabel
+  - UIImage+BlurredFrame
+  - VK-ios-sdk
+
+SPEC CHECKSUMS:
+  Alamofire: 2457e1b2e6c46bb05c3a598c542b7bfd08893775
+  Bolts: 805a4a87413e49d4a0c2b7d469084cbc46b09342
+  FBSDKCoreKit: eb580bfc2040ad44f4c0b4f4d0befb1d35bce59c
+  FLEX: 8b469d7b103ddce41110fe2f0d8a9398c03759a8
+  HockeySDK: 9f4ac41263acf9d8a4d59491a7f17af16529b935
+  MagicalRecord: 89eb7d7ead39fb37f01c3d010665ee94d17f8dba
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  MD5Digest: 2757ae2ee239148912a42063135c6fab2fa082f9
+  Parse: 712efbc476d4f47b0f96b70db7e53101575753aa
+  pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  SnapKit: 4962eed2ee18e48cbd2b2292fffc57efe7235f87
+  SwiftyJSON: 8d6b61a70277ef2a5d710d372e06e7e2d87fb9e4
+  TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
+  UIImage+BlurredFrame: ad2f7195c6947ea3117c7d202f75a51958d5061a
+  VK-ios-sdk: f4b7df0d4e277e06d60fef6dc472be4260eeda6d
+
+COCOAPODS: 0.39.0
