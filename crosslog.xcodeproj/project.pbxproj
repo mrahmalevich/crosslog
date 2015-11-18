@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		618F990DA07344DCA4B2B549 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2B7972AE94FB151260280A /* Pods.framework */; };
+		EC1FDCD11BFCB6DB00FA185E /* Authorization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1FDCCF1BFCB6DB00FA185E /* Authorization.storyboard */; };
+		EC1FDCD31BFCB91C00FA185E /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FDCD21BFCB91C00FA185E /* AuthorizationViewController.swift */; };
+		EC1FDCD51BFCB92A00FA185E /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FDCD41BFCB92A00FA185E /* RegistrationViewController.swift */; };
+		EC1FDCD71BFCBF3E00FA185E /* TransitionsMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FDCD61BFCBF3E00FA185E /* TransitionsMediator.swift */; };
 		EC896EAF1BF87C2700A93CF9 /* Gym+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EC896EAC1BF87C2700A93CF9 /* Gym+CoreDataProperties.m */; };
 		EC896EB01BF87C2700A93CF9 /* Gym.m in Sources */ = {isa = PBXBuildFile; fileRef = EC896EAE1BF87C2700A93CF9 /* Gym.m */; };
 		EC896EB21BF87CED00A93CF9 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC896EB11BF87CED00A93CF9 /* HeaderView.swift */; };
@@ -40,6 +44,10 @@
 		22BE1A02153C2F03A90338B1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AB2B7972AE94FB151260280A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5CCA4374F8F2F5DD062313 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EC1FDCD01BFCB6DB00FA185E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = crosslog/Base.lproj/Authorization.storyboard; sourceTree = SOURCE_ROOT; };
+		EC1FDCD21BFCB91C00FA185E /* AuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		EC1FDCD41BFCB92A00FA185E /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		EC1FDCD61BFCBF3E00FA185E /* TransitionsMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionsMediator.swift; sourceTree = "<group>"; };
 		EC2DA6331BE536F9002C6FB0 /* crosslog-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "crosslog-prefix.pch"; sourceTree = "<group>"; };
 		EC896EAB1BF87C2700A93CF9 /* Gym+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Gym+CoreDataProperties.h"; sourceTree = "<group>"; };
 		EC896EAC1BF87C2700A93CF9 /* Gym+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Gym+CoreDataProperties.m"; sourceTree = "<group>"; };
@@ -68,7 +76,7 @@
 		EC8D669A1BD8F41D00E3FE31 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		EC8D669C1BD8F42600E3FE31 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		EC9785AC1BDA0D8200488F8F /* crosslog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = crosslog.xcdatamodel; sourceTree = "<group>"; };
-		EC9785B01BDA161E00488F8F /* crosslog-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "crosslog-Bridging-Header.h"; path = "Data Model/crosslog-Bridging-Header.h"; sourceTree = "<group>"; };
+		EC9785B01BDA161E00488F8F /* crosslog-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "crosslog-Bridging-Header.h"; path = "../Data Model/crosslog-Bridging-Header.h"; sourceTree = "<group>"; };
 		EC9785B11BDA161F00488F8F /* WorkoutItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WorkoutItem+CoreDataProperties.h"; sourceTree = "<group>"; };
 		EC9785B21BDA161F00488F8F /* WorkoutItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WorkoutItem+CoreDataProperties.m"; sourceTree = "<group>"; };
 		EC9785B31BDA161F00488F8F /* WorkoutItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutItem.h; sourceTree = "<group>"; };
@@ -136,7 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				EC8D66841BD8E28100E3FE31 /* AppDelegate.swift */,
-				EC9785B01BDA161E00488F8F /* crosslog-Bridging-Header.h */,
 				EC9785C41BDA179B00488F8F /* Common */,
 				EC9785AF1BDA15FE00488F8F /* Data Model */,
 				EC9785AE1BDA15FE00488F8F /* BL */,
@@ -159,6 +166,8 @@
 		EC8D66971BD8F3EC00E3FE31 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EC1FDCD21BFCB91C00FA185E /* AuthorizationViewController.swift */,
+				EC1FDCD41BFCB92A00FA185E /* RegistrationViewController.swift */,
 				EC8D66981BD8F40B00E3FE31 /* ProfileViewController.swift */,
 				EC8D669A1BD8F41D00E3FE31 /* FeedViewController.swift */,
 				EC8D669C1BD8F42600E3FE31 /* SettingsViewController.swift */,
@@ -172,6 +181,7 @@
 			children = (
 				EC8D668B1BD8E28100E3FE31 /* Assets.xcassets */,
 				EC8D66881BD8E28100E3FE31 /* Main.storyboard */,
+				EC1FDCCF1BFCB6DB00FA185E /* Authorization.storyboard */,
 				EC8D668D1BD8E28100E3FE31 /* LaunchScreen.storyboard */,
 				EC896EB31BF87CFC00A93CF9 /* HeaderView.xib */,
 				EC9785AB1BDA0D8200488F8F /* crosslog.xcdatamodeld */,
@@ -183,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				EC8D66901BD8E28100E3FE31 /* Info.plist */,
+				EC9785B01BDA161E00488F8F /* crosslog-Bridging-Header.h */,
 				EC2DA6331BE536F9002C6FB0 /* crosslog-prefix.pch */,
 			);
 			path = "Support Files";
@@ -192,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				EC8CD00D1BDE989A00D41B24 /* UserService.swift */,
+				EC1FDCD61BFCBF3E00FA185E /* TransitionsMediator.swift */,
 				EC8CD0151BDE99D500D41B24 /* FeedDataController.swift */,
 			);
 			path = BL;
@@ -307,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC8D668F1BD8E28100E3FE31 /* LaunchScreen.storyboard in Resources */,
+				EC1FDCD11BFCB6DB00FA185E /* Authorization.storyboard in Resources */,
 				EC8D668C1BD8E28100E3FE31 /* Assets.xcassets in Resources */,
 				EC8D668A1BD8E28100E3FE31 /* Main.storyboard in Resources */,
 				EC896EB41BF87CFC00A93CF9 /* HeaderView.xib in Resources */,
@@ -370,6 +383,7 @@
 			files = (
 				EC8CD0141BDE996F00D41B24 /* Training.m in Sources */,
 				EC9785BE1BDA161F00488F8F /* WorkoutItem.m in Sources */,
+				EC1FDCD31BFCB91C00FA185E /* AuthorizationViewController.swift in Sources */,
 				EC8CD01C1BDE9AC500D41B24 /* User.m in Sources */,
 				EC8D66991BD8F40B00E3FE31 /* ProfileViewController.swift in Sources */,
 				EC8D669B1BD8F41D00E3FE31 /* FeedViewController.swift in Sources */,
@@ -385,7 +399,9 @@
 				EC896EB01BF87C2700A93CF9 /* Gym.m in Sources */,
 				ECC6ED4F1BFB9E7300AE706E /* FeedCell.swift in Sources */,
 				EC9785C01BDA161F00488F8F /* Exercise.m in Sources */,
+				EC1FDCD51BFCB92A00FA185E /* RegistrationViewController.swift in Sources */,
 				EC8D669D1BD8F42600E3FE31 /* SettingsViewController.swift in Sources */,
+				EC1FDCD71BFCBF3E00FA185E /* TransitionsMediator.swift in Sources */,
 				EC8CD01B1BDE9AC500D41B24 /* User+CoreDataProperties.m in Sources */,
 				EC9785C11BDA161F00488F8F /* Workout+CoreDataProperties.m in Sources */,
 				EC9785C21BDA161F00488F8F /* Workout.m in Sources */,
@@ -396,6 +412,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		EC1FDCCF1BFCB6DB00FA185E /* Authorization.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC1FDCD01BFCB6DB00FA185E /* Base */,
+			);
+			name = Authorization.storyboard;
+			sourceTree = "<group>";
+		};
 		EC8D66881BD8E28100E3FE31 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -14,6 +14,12 @@ class FeedCell: UITableViewCell {
     @IBOutlet weak var checkInButton: UIButton!
     @IBOutlet weak var resultsButton: UIButton!
     @IBOutlet weak var editButton: UIButton!
+    
+    var training: Training? = nil {
+        didSet {
+            // TODO: setup UI
+        }
+    }
 
     // MARK - Static
     static func cellHeight() -> CGFloat {
