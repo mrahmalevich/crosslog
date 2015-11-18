@@ -27,6 +27,8 @@ class AuthorizationViewController: UIViewController {
 
     // MARK: - Actions
     @IBAction func actionLogin(sender: UIButton) {
-        TransitionsMediator.sharedInstance.processAuthorization(animated: true)
+        UserService.sharedInstance.loginWithCompletion({ (error: NSError?) in
+            // TODO: handling authorization result
+        })
     }
 }

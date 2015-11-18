@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import MagicalRecord
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,10 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
+        MagicalRecord.setupAutoMigratingCoreDataStack()
+        MagicalRecord.enableShorthandMethods()
+        
         Parse.setApplicationId(kParseAppID,
             clientKey: kParseClientKey)
         
-        if UserService.sharedInstane.isAuthorized {
+        if UserService.sharedInstance.isAuthorized {
             TransitionsMediator.sharedInstance.processAuthorization(animated: false)
         } else {
             TransitionsMediator.sharedInstance.showAuthorization(animated: false)

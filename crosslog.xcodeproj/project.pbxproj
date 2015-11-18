@@ -12,6 +12,7 @@
 		EC1FDCD31BFCB91C00FA185E /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FDCD21BFCB91C00FA185E /* AuthorizationViewController.swift */; };
 		EC1FDCD51BFCB92A00FA185E /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FDCD41BFCB92A00FA185E /* RegistrationViewController.swift */; };
 		EC1FDCD71BFCBF3E00FA185E /* TransitionsMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FDCD61BFCBF3E00FA185E /* TransitionsMediator.swift */; };
+		EC1FDCD91BFCDDC900FA185E /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FDCD81BFCDDC900FA185E /* TypeAliases.swift */; };
 		EC896EAF1BF87C2700A93CF9 /* Gym+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EC896EAC1BF87C2700A93CF9 /* Gym+CoreDataProperties.m */; };
 		EC896EB01BF87C2700A93CF9 /* Gym.m in Sources */ = {isa = PBXBuildFile; fileRef = EC896EAE1BF87C2700A93CF9 /* Gym.m */; };
 		EC896EB21BF87CED00A93CF9 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC896EB11BF87CED00A93CF9 /* HeaderView.swift */; };
@@ -48,6 +49,7 @@
 		EC1FDCD21BFCB91C00FA185E /* AuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 		EC1FDCD41BFCB92A00FA185E /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		EC1FDCD61BFCBF3E00FA185E /* TransitionsMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionsMediator.swift; sourceTree = "<group>"; };
+		EC1FDCD81BFCDDC900FA185E /* TypeAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
 		EC2DA6331BE536F9002C6FB0 /* crosslog-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "crosslog-prefix.pch"; sourceTree = "<group>"; };
 		EC896EAB1BF87C2700A93CF9 /* Gym+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Gym+CoreDataProperties.h"; sourceTree = "<group>"; };
 		EC896EAC1BF87C2700A93CF9 /* Gym+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Gym+CoreDataProperties.m"; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				EC8CD00A1BDE94D500D41B24 /* Constants.swift */,
+				EC1FDCD81BFCDDC900FA185E /* TypeAliases.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				EC896EAF1BF87C2700A93CF9 /* Gym+CoreDataProperties.m in Sources */,
 				EC896EB21BF87CED00A93CF9 /* HeaderView.swift in Sources */,
 				EC896EB01BF87C2700A93CF9 /* Gym.m in Sources */,
+				EC1FDCD91BFCDDC900FA185E /* TypeAliases.swift in Sources */,
 				ECC6ED4F1BFB9E7300AE706E /* FeedCell.swift in Sources */,
 				EC9785C01BDA161F00488F8F /* Exercise.m in Sources */,
 				EC1FDCD51BFCB92A00FA185E /* RegistrationViewController.swift in Sources */,

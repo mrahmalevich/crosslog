@@ -11,6 +11,8 @@ import MagicalRecord
 
 // TODO: handling authorization
 
+let kAuthorizedUserIDKey = "kAuthorizedUserIDKey"
+
 class UserService {
     
     var authorizedUser: User?
@@ -21,24 +23,46 @@ class UserService {
     }
     
     // MARK - Initialization
-    static let sharedInstane: UserService = {
+    static let sharedInstance: UserService = {
         let instance = UserService()
         return instance
     }()
     
     init() {
-        authorizedUser = nil
+        if let authorizedUserID = NSUserDefaults.standardUserDefaults().objectForKey(kAuthorizedUserIDKey) {
+            if let user = User.findFirstByAttribute("backendId", withValue: authorizedUserID) {
+                self.authorizedUser = user
+            }
+        }
     }
     
     // MARK - Public methods
-    func login() {
+    func loginWithCompletion(completion: ErrorClosure?) {
         let templateUserID = "-1000"
-        var user: User? = User.MR_findFirstByAttribute("backendId", withValue: templateUserID)
+        var user = User.findFirstByAttribute("backendId", withValue: templateUserID)
         if user == nil {
             user = User.MR_createEntity()
-            user!.backendId = templateUserID
-            NSManagedObjectContext.MR_defaultContext().saveToPersistentStoreAndWait()
+            user.backendId = templateUserID
+            NSManagedObjectContext.defaultContext().MR_saveToPersistentStoreAndWait()
         }
         self.authorizedUser = user
+        
+        NSUserDefaults.standardUserDefaults().setObject(user!.backendId, forKey: kAuthorizedUserIDKey)
+        NSUserDefaults.standardUserDefaults().synchronize()
+        
+        TransitionsMediator.sharedInstance.processAuthorization(animated: true)
+        
+        if let completion = completion {
+            completion(error: nil)
+        }
+    }
+    
+    func logout() {
+        self.authorizedUser = nil
+        
+        NSUserDefaults.standardUserDefaults().removeObjectForKey(kAuthorizedUserIDKey)
+        NSUserDefaults.standardUserDefaults().synchronize()
+        
+        TransitionsMediator.sharedInstance.showAuthorization(animated: true)
     }
 }

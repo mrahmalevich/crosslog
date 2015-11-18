@@ -193,17 +193,27 @@ T2B (L-1 Knees –ups)</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIJ-sZ-8Q3">
-                                <rect key="frame" x="128" y="273" width="64" height="21"/>
+                                <rect key="frame" x="128" y="273" width="63.5" height="20.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcO-gg-Kbh">
+                                <rect key="frame" x="136" y="314" width="48" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutAction:" destination="qFO-1l-vgd" eventType="touchUpInside" id="VL0-FF-K3d"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="kcO-gg-Kbh" firstAttribute="top" secondItem="eIJ-sZ-8Q3" secondAttribute="bottom" constant="20" id="9qY-lC-S2d"/>
                             <constraint firstItem="eIJ-sZ-8Q3" firstAttribute="centerX" secondItem="Rhi-GF-KpQ" secondAttribute="centerX" id="bd6-hK-NrE"/>
+                            <constraint firstItem="kcO-gg-Kbh" firstAttribute="centerX" secondItem="Rhi-GF-KpQ" secondAttribute="centerX" id="mTP-Mx-H8V"/>
                             <constraint firstItem="eIJ-sZ-8Q3" firstAttribute="centerY" secondItem="Rhi-GF-KpQ" secondAttribute="centerY" id="wcr-hO-J0e"/>
                         </constraints>
                     </view>

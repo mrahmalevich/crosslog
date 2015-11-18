@@ -10,4 +10,8 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    // MARK - Actions
+    @IBAction func logoutAction(sender: UIButton) {
+        UserService.sharedInstance.logout()
+    }
 }
