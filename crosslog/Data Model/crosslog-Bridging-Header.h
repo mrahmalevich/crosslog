@@ -3,3 +3,5 @@
 //
 
 #import "DataModel.h"
+
+#import <MagicalRecord/MagicalRecord.h>

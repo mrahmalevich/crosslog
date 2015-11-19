@@ -30,7 +30,7 @@ class UserService {
     
     init() {
         if let authorizedUserID = NSUserDefaults.standardUserDefaults().objectForKey(kAuthorizedUserIDKey) {
-            if let user = User.findFirstByAttribute("backendId", withValue: authorizedUserID) {
+            if let user = User.MR_findFirstByAttribute("backendId", withValue: authorizedUserID) {
                 self.authorizedUser = user
             }
         }
@@ -39,11 +39,11 @@ class UserService {
     // MARK - Public methods
     func loginWithCompletion(completion: ErrorClosure?) {
         let templateUserID = "-1000"
-        var user = User.findFirstByAttribute("backendId", withValue: templateUserID)
+        var user = User.MR_findFirstByAttribute("backendId", withValue: templateUserID)
         if user == nil {
             user = User.MR_createEntity()
             user.backendId = templateUserID
-            NSManagedObjectContext.defaultContext().MR_saveToPersistentStoreAndWait()
+            NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
         }
         self.authorizedUser = user
         

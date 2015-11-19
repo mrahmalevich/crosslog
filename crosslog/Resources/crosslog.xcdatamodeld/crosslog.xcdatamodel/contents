@@ -2,13 +2,20 @@
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Xcode 7.0">
     <entity name="Exercise" representedClassName="Exercise" syncable="YES">
         <attribute name="abbr" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="backendId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="backendId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="id"/>
+            </userInfo>
+        </attribute>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="optionalWeighted" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="units" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="weighted" optional="YES" attributeType="Boolean" syncable="YES"/>
         <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WorkoutItem" inverseName="exercise" inverseEntity="WorkoutItem" syncable="YES"/>
+        <userInfo>
+            <entry key="relatedByAttribute" value="backendId"/>
+        </userInfo>
     </entity>
     <entity name="Gym" representedClassName="Gym" syncable="YES">
         <attribute name="backendId" optional="YES" attributeType="String" syncable="YES"/>
@@ -42,10 +49,10 @@
     </entity>
     <elements>
         <element name="Exercise" positionX="-63" positionY="-18" width="128" height="165"/>
+        <element name="Gym" positionX="-54" positionY="63" width="128" height="75"/>
         <element name="Training" positionX="-45" positionY="63" width="128" height="90"/>
         <element name="User" positionX="-45" positionY="72" width="128" height="90"/>
         <element name="Workout" positionX="-54" positionY="-9" width="128" height="105"/>
         <element name="WorkoutItem" positionX="-36" positionY="9" width="128" height="165"/>
-        <element name="Gym" positionX="-54" positionY="63" width="128" height="75"/>
     </elements>
 </model>

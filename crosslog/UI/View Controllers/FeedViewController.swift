@@ -36,6 +36,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let headerView = HeaderView.headerView()
         tableView.tableHeaderView = headerView
+        
+        dataController.updateExercises()
     }
     
     // MARK: - UITableView delegate & datasource
