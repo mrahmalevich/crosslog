@@ -37,7 +37,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let headerView = HeaderView.headerView()
         tableView.tableHeaderView = headerView
         
-        dataController.updateExercises()
+        SharedDataManager.sharedInstance.updateExercisesWithCompletion(nil)
+        dataController.updateSessionsWithCompletion(nil)
     }
     
     // MARK: - UITableView delegate & datasource

@@ -22,9 +22,24 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Training" representedClassName="Training" syncable="YES">
-        <attribute name="backendId" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
-        <relationship name="workouts" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Workout" inverseName="training" inverseEntity="Workout" syncable="YES"/>
+        <attribute name="backendId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES">
+            <userInfo>
+                <entry key="dateFormat" value="yyyy-MM-dd"/>
+            </userInfo>
+        </attribute>
+        <relationship name="workouts" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Workout" inverseName="training" inverseEntity="Workout" syncable="YES">
+            <userInfo>
+                <entry key="relatedByAttribute" value="backendId"/>
+            </userInfo>
+        </relationship>
+        <userInfo>
+            <entry key="relatedByAttribute" value="backendId"/>
+        </userInfo>
     </entity>
     <entity name="User" representedClassName="User" syncable="YES">
         <attribute name="backendId" optional="YES" attributeType="String" syncable="YES"/>
@@ -32,20 +47,43 @@
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Workout" representedClassName="Workout" syncable="YES">
-        <attribute name="backendId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="backendId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="id"/>
+            </userInfo>
+        </attribute>
         <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="items" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="WorkoutItem" inverseName="workout" inverseEntity="WorkoutItem" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="WorkoutItem" inverseName="workout" inverseEntity="WorkoutItem" syncable="YES">
+            <userInfo>
+                <entry key="relatedByAttribute" value="backendId"/>
+            </userInfo>
+        </relationship>
         <relationship name="training" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Training" inverseName="workouts" inverseEntity="Training" syncable="YES"/>
+        <userInfo>
+            <entry key="relatedByAttribute" value="backendId"/>
+        </userInfo>
     </entity>
     <entity name="WorkoutItem" representedClassName="WorkoutItem" syncable="YES">
-        <attribute name="backendId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="backendId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="id"/>
+            </userInfo>
+        </attribute>
         <attribute name="count" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="extraWeight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="minCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="units" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="weight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
-        <relationship name="exercise" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercise" inverseName="items" inverseEntity="Exercise" syncable="YES"/>
+        <relationship name="exercise" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercise" inverseName="items" inverseEntity="Exercise" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="exerciseId"/>
+                <entry key="relatedByAttribute" value="backendId"/>
+            </userInfo>
+        </relationship>
         <relationship name="workout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Workout" inverseName="items" inverseEntity="Workout" syncable="YES"/>
+        <userInfo>
+            <entry key="relatedByAttribute" value="backendId"/>
+        </userInfo>
     </entity>
     <elements>
         <element name="Exercise" positionX="-63" positionY="-18" width="128" height="165"/>
