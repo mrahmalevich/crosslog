@@ -16,24 +16,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Authorization" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHv-Gq-uJm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authorization" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHv-Gq-uJm">
                                 <rect key="frame" x="109" y="273" width="102" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIc-yH-T9j">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIc-yH-T9j">
                                 <rect key="frame" x="141" y="302" width="38" height="30"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="VAj-jL-t4T"/>
+                                    <constraint firstAttribute="width" constant="38" id="bAV-AA-qT1"/>
+                                </constraints>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="actionLogin:" destination="18z-VH-bDZ" eventType="touchUpInside" id="BIv-Ng-zLU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSg-bx-GM4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSg-bx-GM4">
                                 <rect key="frame" x="132" y="530" width="57" height="30"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="Lir-W9-2rG"/>
+                                    <constraint firstAttribute="height" constant="30" id="dY0-JL-jTd"/>
+                                </constraints>
                                 <state key="normal" title="Register"/>
                                 <connections>
                                     <segue destination="eKw-bC-lP4" kind="show" id="ee1-qb-f0f"/>
@@ -42,6 +50,14 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dHv-Gq-uJm" firstAttribute="centerX" secondItem="Cgm-3p-FTy" secondAttribute="centerX" id="7Pm-e8-Eub"/>
+                            <constraint firstItem="hIc-yH-T9j" firstAttribute="top" secondItem="dHv-Gq-uJm" secondAttribute="bottom" constant="8" id="7el-q1-bnw"/>
+                            <constraint firstItem="eS1-z5-f7v" firstAttribute="top" secondItem="MSg-bx-GM4" secondAttribute="bottom" constant="8" id="XEX-ns-M5Y"/>
+                            <constraint firstItem="hIc-yH-T9j" firstAttribute="centerX" secondItem="Cgm-3p-FTy" secondAttribute="centerX" id="h5t-0J-Vwb"/>
+                            <constraint firstItem="dHv-Gq-uJm" firstAttribute="centerY" secondItem="Cgm-3p-FTy" secondAttribute="centerY" id="oss-QU-kGu"/>
+                            <constraint firstItem="MSg-bx-GM4" firstAttribute="centerX" secondItem="Cgm-3p-FTy" secondAttribute="centerX" id="xHh-kR-lHo"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qk4-fA-b4u"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

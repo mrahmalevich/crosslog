@@ -1,0 +1,36 @@
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "BbM-46-7TK"; */
+"BbM-46-7TK.title" = "Profile";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "CvV-UJ-IXa"; */
+"CvV-UJ-IXa.title" = "Settings";
+
+/* Class = "UILabel"; text = "Yeah-Me WU\n\nE2M for 5 Sets:\n– 3-5 “touch and go” Squat Cleans @ 50%\n-*This is cycling practice…do not go heavy, become more efficient\n\nWOD\nL-3 21-18-15-12-9-6\nL-2 18-15-12-9-6-3\nL-1 21-15-9\n\nWB 9/6\nT2B (L-1 Knees –ups)"; ObjectID = "FFA-ou-iPi"; */
+"FFA-ou-iPi.text" = "Yeah-Me WU\n\nE2M for 5 Sets:\n– 3-5 “touch and go” Squat Cleans @ 50%\n-*This is cycling practice…do not go heavy, become more efficient\n\nWOD\nL-3 21-18-15-12-9-6\nL-2 18-15-12-9-6-3\nL-1 21-15-9\n\nWB 9/6\nT2B (L-1 Knees –ups)";
+
+/* Class = "UIButton"; normalTitle = "Результаты"; ObjectID = "Ira-5x-BAq"; */
+"Ira-5x-BAq.normalTitle" = "Результаты";
+
+/* Class = "UILabel"; text = "17.11.2015"; ObjectID = "P2p-Zj-v2L"; */
+"P2p-Zj-v2L.text" = "17.11.2015";
+
+/* Class = "UILabel"; text = "Profile"; ObjectID = "Pyh-fT-vyh"; */
+"Pyh-fT-vyh.text" = "Profile";
+
+/* Class = "UIButton"; normalTitle = "Я был!"; ObjectID = "bJ4-lY-fRb"; */
+"bJ4-lY-fRb.normalTitle" = "Я был!";
+
+/* Class = "UILabel"; text = "Feed Header"; ObjectID = "cTX-kc-w5M"; */
+"cTX-kc-w5M.text" = "Feed Header";
+
+/* Class = "UILabel"; text = "Settings"; ObjectID = "eIJ-sZ-8Q3"; */
+"eIJ-sZ-8Q3.text" = "Settings";
+
+/* Class = "UITabBarItem"; title = "Feed"; ObjectID = "f0m-Yt-VE9"; */
+"f0m-Yt-VE9.title" = "Feed";
+
+/* Class = "UIButton"; normalTitle = "Logout"; ObjectID = "kcO-gg-Kbh"; */
+"kcO-gg-Kbh.normalTitle" = "Logout";
+
+/* Class = "UILabel"; text = "Training"; ObjectID = "lu7-Ed-Xfd"; */
+"lu7-Ed-Xfd.text" = "Training";

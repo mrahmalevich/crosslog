@@ -2,7 +2,7 @@
 //  Workout+CoreDataProperties.h
 //  crosslog
 //
-//  Created by Mikhail Rakhmalevich on 27.10.15.
+//  Created by Mikhail Rakhmalevich on 23.11.15.
 //  Copyright © 2015 Mikhail Rakhmalevich. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, retain) NSString *backendId;
 @property (nullable, nonatomic, retain) NSString *comment;
+@property (nullable, nonatomic, retain) NSString *title;
 @property (nullable, nonatomic, retain) NSOrderedSet<WorkoutItem *> *items;
 @property (nullable, nonatomic, retain) Training *training;
 

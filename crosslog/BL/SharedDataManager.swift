@@ -87,8 +87,7 @@ class SharedDataManager {
         // import fetched exercises to persistent store
         let context: NSManagedObjectContext = NSManagedObjectContext.MR_context()
         for rawExercise in exercisesArray {
-            let newExercise: Exercise = Exercise.MR_importFromObject(rawExercise, inContext: context)
-            print(newExercise)
+            Exercise.MR_importFromObject(rawExercise, inContext: context)
         }
         context.MR_saveToPersistentStoreAndWait()
         

@@ -15,7 +15,6 @@
 
 @dynamic backendId;
 @dynamic count;
-@dynamic extraWeight;
 @dynamic minCount;
 @dynamic units;
 @dynamic weight;

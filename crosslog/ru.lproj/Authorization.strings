@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Registration"; ObjectID = "HX7-Sh-XU9"; */
+"HX7-Sh-XU9.text" = "Registration";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "MSg-bx-GM4"; */
+"MSg-bx-GM4.normalTitle" = "Register";
+
+/* Class = "UILabel"; text = "Authorization"; ObjectID = "dHv-Gq-uJm"; */
+"dHv-Gq-uJm.text" = "Authorization";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "hIc-yH-T9j"; */
+"hIc-yH-T9j.normalTitle" = "Login";

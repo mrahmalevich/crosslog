@@ -18,9 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
         MagicalRecord.setupAutoMigratingCoreDataStack()
-        
         Parse.setApplicationId(kParseAppID,
             clientKey: kParseClientKey)
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window!.makeKeyAndVisible()
         
         if UserService.sharedInstance.isAuthorized {
             TransitionsMediator.sharedInstance.processAuthorization(animated: false)

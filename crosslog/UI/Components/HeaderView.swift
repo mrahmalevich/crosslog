@@ -9,9 +9,5 @@
 import UIKit
 
 class HeaderView: UIView {
-    
-    static func headerView() -> HeaderView {
-        return NSBundle.mainBundle().loadNibNamed("HeaderView", owner: self, options: nil).first as! HeaderView
-    }
-    
+        
 }

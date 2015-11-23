@@ -14,10 +14,19 @@
 		EC1FDCD71BFCBF3E00FA185E /* TransitionsMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FDCD61BFCBF3E00FA185E /* TransitionsMediator.swift */; };
 		EC1FDCD91BFCDDC900FA185E /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FDCD81BFCDDC900FA185E /* TypeAliases.swift */; };
 		EC1FDCDB1BFF386200FA185E /* SharedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FDCDA1BFF386200FA185E /* SharedDataManager.swift */; };
+		EC1FDCE21C01F9D500FA185E /* FormattingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FDCE11C01F9D500FA185E /* FormattingService.swift */; };
+		EC1FDCE41C032E6300FA185E /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FDCE31C032E6300FA185E /* Stylesheet.swift */; };
+		EC1FDCE71C033BB300FA185E /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FDCE61C033BB300FA185E /* FeedCell.swift */; };
+		EC1FDCE91C033BC800FA185E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FDCE81C033BC800FA185E /* HeaderView.swift */; };
+		EC1FDCEB1C033BD000FA185E /* FeedHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FDCEA1C033BD000FA185E /* FeedHeaderView.swift */; };
+		EC1FDCED1C033D0300FA185E /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FDCEC1C033D0300FA185E /* TrainingViewController.swift */; };
+		EC1FDCEF1C03459D00FA185E /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FDCEE1C03459D00FA185E /* SettingsService.swift */; };
+		EC1FDCF21C034C5D00FA185E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC1FDCF41C034C5D00FA185E /* Localizable.strings */; };
+		EC1FDCFA1C034FE000FA185E /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FDCF91C034FE000FA185E /* Enumerations.swift */; };
+		EC1FDCFC1C0382B700FA185E /* TrainingResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FDCFB1C0382B600FA185E /* TrainingResultsViewController.swift */; };
+		EC1FDCFE1C0382C300FA185E /* EnterResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1FDCFD1C0382C300FA185E /* EnterResultViewController.swift */; };
 		EC896EAF1BF87C2700A93CF9 /* Gym+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EC896EAC1BF87C2700A93CF9 /* Gym+CoreDataProperties.m */; };
 		EC896EB01BF87C2700A93CF9 /* Gym.m in Sources */ = {isa = PBXBuildFile; fileRef = EC896EAE1BF87C2700A93CF9 /* Gym.m */; };
-		EC896EB21BF87CED00A93CF9 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC896EB11BF87CED00A93CF9 /* HeaderView.swift */; };
-		EC896EB41BF87CFC00A93CF9 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC896EB31BF87CFC00A93CF9 /* HeaderView.xib */; };
 		EC8CD00B1BDE94D500D41B24 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8CD00A1BDE94D500D41B24 /* Constants.swift */; };
 		EC8CD00E1BDE989A00D41B24 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8CD00D1BDE989A00D41B24 /* UserService.swift */; };
 		EC8CD0131BDE996F00D41B24 /* Training+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8CD0101BDE996F00D41B24 /* Training+CoreDataProperties.m */; };
@@ -39,7 +48,6 @@
 		EC9785C01BDA161F00488F8F /* Exercise.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9785B81BDA161F00488F8F /* Exercise.m */; };
 		EC9785C11BDA161F00488F8F /* Workout+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9785BA1BDA161F00488F8F /* Workout+CoreDataProperties.m */; };
 		EC9785C21BDA161F00488F8F /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9785BC1BDA161F00488F8F /* Workout.m */; };
-		ECC6ED4F1BFB9E7300AE706E /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC6ED4E1BFB9E7300AE706E /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,13 +60,24 @@
 		EC1FDCD61BFCBF3E00FA185E /* TransitionsMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionsMediator.swift; sourceTree = "<group>"; };
 		EC1FDCD81BFCDDC900FA185E /* TypeAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
 		EC1FDCDA1BFF386200FA185E /* SharedDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedDataManager.swift; sourceTree = "<group>"; };
-		EC2DA6331BE536F9002C6FB0 /* crosslog-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "crosslog-prefix.pch"; sourceTree = "<group>"; };
+		EC1FDCE11C01F9D500FA185E /* FormattingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormattingService.swift; sourceTree = "<group>"; };
+		EC1FDCE31C032E6300FA185E /* Stylesheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylesheet.swift; sourceTree = "<group>"; };
+		EC1FDCE61C033BB300FA185E /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		EC1FDCE81C033BC800FA185E /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		EC1FDCEA1C033BD000FA185E /* FeedHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedHeaderView.swift; sourceTree = "<group>"; };
+		EC1FDCEC1C033D0300FA185E /* TrainingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
+		EC1FDCEE1C03459D00FA185E /* SettingsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
+		EC1FDCF51C034C6000FA185E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EC1FDCF61C034C7C00FA185E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		EC1FDCF71C034C7E00FA185E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EC1FDCF81C034C7E00FA185E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EC1FDCF91C034FE000FA185E /* Enumerations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
+		EC1FDCFB1C0382B600FA185E /* TrainingResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingResultsViewController.swift; sourceTree = "<group>"; };
+		EC1FDCFD1C0382C300FA185E /* EnterResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterResultViewController.swift; sourceTree = "<group>"; };
 		EC896EAB1BF87C2700A93CF9 /* Gym+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Gym+CoreDataProperties.h"; sourceTree = "<group>"; };
 		EC896EAC1BF87C2700A93CF9 /* Gym+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Gym+CoreDataProperties.m"; sourceTree = "<group>"; };
 		EC896EAD1BF87C2700A93CF9 /* Gym.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gym.h; sourceTree = "<group>"; };
 		EC896EAE1BF87C2700A93CF9 /* Gym.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gym.m; sourceTree = "<group>"; };
-		EC896EB11BF87CED00A93CF9 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
-		EC896EB31BF87CFC00A93CF9 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		EC8CD00A1BDE94D500D41B24 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EC8CD00D1BDE989A00D41B24 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		EC8CD00F1BDE996F00D41B24 /* Training+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Training+CoreDataProperties.h"; sourceTree = "<group>"; };
@@ -94,7 +113,6 @@
 		EC9785BB1BDA161F00488F8F /* Workout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Workout.h; sourceTree = "<group>"; };
 		EC9785BC1BDA161F00488F8F /* Workout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Workout.m; sourceTree = "<group>"; };
 		EC9785C31BDA167E00488F8F /* DataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
-		ECC6ED4E1BFB9E7300AE706E /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +142,25 @@
 				AB2B7972AE94FB151260280A /* Pods.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC1FDCE01C01F9D500FA185E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EC1FDCE11C01F9D500FA185E /* FormattingService.swift */,
+				EC1FDCE31C032E6300FA185E /* Stylesheet.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EC1FDCE51C033BB300FA185E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EC1FDCE81C033BC800FA185E /* HeaderView.swift */,
+				EC1FDCEA1C033BD000FA185E /* FeedHeaderView.swift */,
+				EC1FDCE61C033BB300FA185E /* FeedCell.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		EC8D66781BD8E28000E3FE31 = {
@@ -161,7 +198,7 @@
 		EC8D66961BD8F3EB00E3FE31 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				ECC6ED4D1BFB9E4F00AE706E /* Cells */,
+				EC1FDCE51C033BB300FA185E /* Components */,
 				EC8D66971BD8F3EC00E3FE31 /* View Controllers */,
 			);
 			path = UI;
@@ -175,7 +212,9 @@
 				EC8D66981BD8F40B00E3FE31 /* ProfileViewController.swift */,
 				EC8D669A1BD8F41D00E3FE31 /* FeedViewController.swift */,
 				EC8D669C1BD8F42600E3FE31 /* SettingsViewController.swift */,
-				EC896EB11BF87CED00A93CF9 /* HeaderView.swift */,
+				EC1FDCEC1C033D0300FA185E /* TrainingViewController.swift */,
+				EC1FDCFB1C0382B600FA185E /* TrainingResultsViewController.swift */,
+				EC1FDCFD1C0382C300FA185E /* EnterResultViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -187,7 +226,6 @@
 				EC8D66881BD8E28100E3FE31 /* Main.storyboard */,
 				EC1FDCCF1BFCB6DB00FA185E /* Authorization.storyboard */,
 				EC8D668D1BD8E28100E3FE31 /* LaunchScreen.storyboard */,
-				EC896EB31BF87CFC00A93CF9 /* HeaderView.xib */,
 				EC9785AB1BDA0D8200488F8F /* crosslog.xcdatamodeld */,
 			);
 			path = Resources;
@@ -198,7 +236,7 @@
 			children = (
 				EC8D66901BD8E28100E3FE31 /* Info.plist */,
 				EC9785B01BDA161E00488F8F /* crosslog-Bridging-Header.h */,
-				EC2DA6331BE536F9002C6FB0 /* crosslog-prefix.pch */,
+				EC1FDCF41C034C5D00FA185E /* Localizable.strings */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -210,6 +248,7 @@
 				EC1FDCD61BFCBF3E00FA185E /* TransitionsMediator.swift */,
 				EC8CD0151BDE99D500D41B24 /* FeedDataController.swift */,
 				EC1FDCDA1BFF386200FA185E /* SharedDataManager.swift */,
+				EC1FDCEE1C03459D00FA185E /* SettingsService.swift */,
 			);
 			path = BL;
 			sourceTree = "<group>";
@@ -251,16 +290,10 @@
 			children = (
 				EC8CD00A1BDE94D500D41B24 /* Constants.swift */,
 				EC1FDCD81BFCDDC900FA185E /* TypeAliases.swift */,
+				EC1FDCF91C034FE000FA185E /* Enumerations.swift */,
+				EC1FDCE01C01F9D500FA185E /* Utils */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		ECC6ED4D1BFB9E4F00AE706E /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				ECC6ED4E1BFB9E7300AE706E /* FeedCell.swift */,
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +341,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = EC8D66781BD8E28000E3FE31;
 			productRefGroup = EC8D66821BD8E28000E3FE31 /* Products */;
@@ -324,11 +358,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC1FDCF21C034C5D00FA185E /* Localizable.strings in Resources */,
 				EC8D668F1BD8E28100E3FE31 /* LaunchScreen.storyboard in Resources */,
 				EC1FDCD11BFCB6DB00FA185E /* Authorization.storyboard in Resources */,
 				EC8D668C1BD8E28100E3FE31 /* Assets.xcassets in Resources */,
 				EC8D668A1BD8E28100E3FE31 /* Main.storyboard in Resources */,
-				EC896EB41BF87CFC00A93CF9 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,25 +421,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC1FDCED1C033D0300FA185E /* TrainingViewController.swift in Sources */,
 				EC8CD0141BDE996F00D41B24 /* Training.m in Sources */,
 				EC9785BE1BDA161F00488F8F /* WorkoutItem.m in Sources */,
 				EC1FDCD31BFCB91C00FA185E /* AuthorizationViewController.swift in Sources */,
+				EC1FDCFE1C0382C300FA185E /* EnterResultViewController.swift in Sources */,
 				EC8CD01C1BDE9AC500D41B24 /* User.m in Sources */,
 				EC8D66991BD8F40B00E3FE31 /* ProfileViewController.swift in Sources */,
+				EC1FDCE71C033BB300FA185E /* FeedCell.swift in Sources */,
+				EC1FDCE41C032E6300FA185E /* Stylesheet.swift in Sources */,
 				EC8D669B1BD8F41D00E3FE31 /* FeedViewController.swift in Sources */,
+				EC1FDCFC1C0382B700FA185E /* TrainingResultsViewController.swift in Sources */,
 				EC8CD0131BDE996F00D41B24 /* Training+CoreDataProperties.m in Sources */,
 				EC8CD0161BDE99D500D41B24 /* FeedDataController.swift in Sources */,
+				EC1FDCE21C01F9D500FA185E /* FormattingService.swift in Sources */,
 				EC9785BF1BDA161F00488F8F /* Exercise+CoreDataProperties.m in Sources */,
 				EC8D66851BD8E28100E3FE31 /* AppDelegate.swift in Sources */,
+				EC1FDCEB1C033BD000FA185E /* FeedHeaderView.swift in Sources */,
 				EC1FDCDB1BFF386200FA185E /* SharedDataManager.swift in Sources */,
 				EC9785AD1BDA0D8200488F8F /* crosslog.xcdatamodeld in Sources */,
 				EC8CD00E1BDE989A00D41B24 /* UserService.swift in Sources */,
+				EC1FDCEF1C03459D00FA185E /* SettingsService.swift in Sources */,
 				EC9785BD1BDA161F00488F8F /* WorkoutItem+CoreDataProperties.m in Sources */,
 				EC896EAF1BF87C2700A93CF9 /* Gym+CoreDataProperties.m in Sources */,
-				EC896EB21BF87CED00A93CF9 /* HeaderView.swift in Sources */,
 				EC896EB01BF87C2700A93CF9 /* Gym.m in Sources */,
 				EC1FDCD91BFCDDC900FA185E /* TypeAliases.swift in Sources */,
-				ECC6ED4F1BFB9E7300AE706E /* FeedCell.swift in Sources */,
+				EC1FDCE91C033BC800FA185E /* HeaderView.swift in Sources */,
 				EC9785C01BDA161F00488F8F /* Exercise.m in Sources */,
 				EC1FDCD51BFCB92A00FA185E /* RegistrationViewController.swift in Sources */,
 				EC8D669D1BD8F42600E3FE31 /* SettingsViewController.swift in Sources */,
@@ -414,6 +455,7 @@
 				EC9785C11BDA161F00488F8F /* Workout+CoreDataProperties.m in Sources */,
 				EC9785C21BDA161F00488F8F /* Workout.m in Sources */,
 				EC8CD00B1BDE94D500D41B24 /* Constants.swift in Sources */,
+				EC1FDCFA1C034FE000FA185E /* Enumerations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,10 +470,20 @@
 			name = Authorization.storyboard;
 			sourceTree = "<group>";
 		};
+		EC1FDCF41C034C5D00FA185E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC1FDCF51C034C6000FA185E /* en */,
+				EC1FDCF81C034C7E00FA185E /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		EC8D66881BD8E28100E3FE31 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EC8D66891BD8E28100E3FE31 /* Base */,
+				EC1FDCF61C034C7C00FA185E /* ru */,
 			);
 			name = Main.storyboard;
 			path = ..;
@@ -441,6 +493,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				EC8D668E1BD8E28100E3FE31 /* Base */,
+				EC1FDCF71C034C7E00FA185E /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			path = ..;
@@ -540,7 +593,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = crosslog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.mrakhmalevich.crosslog;
@@ -556,7 +608,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = crosslog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.mrakhmalevich.crosslog;

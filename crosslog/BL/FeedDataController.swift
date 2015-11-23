@@ -42,7 +42,7 @@ class FeedDataController: NSObject {
                                                "weight":100,
                                                "extraWeight":true,
                                                "units":0,
-                                               "exercizeId":"1"],
+                                               "exerciseId":"1"],
                                               ["id":"2",
                                                "count":0,
                                                "minCount":0,
@@ -58,7 +58,7 @@ class FeedDataController: NSObject {
                                                "weight":100,
                                                "extraWeight":true,
                                                "units":0,
-                                               "exercizeId":"3"],
+                                               "exerciseId":"3"],
                                               ["id":"4",
                                                "count":0,
                                                "minCount":0,
@@ -77,7 +77,7 @@ class FeedDataController: NSObject {
                                                "weight":100,
                                                "extraWeight":true,
                                                "units":0,
-                                               "exercizeId":"5"],
+                                               "exerciseId":"5"],
                                               ["id":"6",
                                                "count":0,
                                                "minCount":0,
@@ -93,7 +93,7 @@ class FeedDataController: NSObject {
                                                "weight":100,
                                                "extraWeight":true,
                                                "units":0,
-                                               "exercizeId":"7"],
+                                               "exerciseId":"7"],
                                               ["id":"8",
                                                "count":0,
                                                "minCount":0,
@@ -106,8 +106,7 @@ class FeedDataController: NSObject {
         // import sessions to persistent store
         let context = NSManagedObjectContext.MR_context()
         for sessionDict in rawSessions {
-            let newTraining: Training = Training.MR_importFromObject(sessionDict, inContext: context)
-            print(newTraining)
+            Training.MR_importFromObject(sessionDict, inContext: context)
         }
         context.MR_saveToPersistentStoreAndWait()
 

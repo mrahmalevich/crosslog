@@ -8,7 +8,6 @@
             </userInfo>
         </attribute>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="optionalWeighted" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="units" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="weighted" optional="YES" attributeType="Boolean" syncable="YES"/>
@@ -53,6 +52,7 @@
             </userInfo>
         </attribute>
         <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="items" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="WorkoutItem" inverseName="workout" inverseEntity="WorkoutItem" syncable="YES">
             <userInfo>
                 <entry key="relatedByAttribute" value="backendId"/>
@@ -70,7 +70,6 @@
             </userInfo>
         </attribute>
         <attribute name="count" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <attribute name="extraWeight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="minCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="units" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="weight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
@@ -86,11 +85,11 @@
         </userInfo>
     </entity>
     <elements>
-        <element name="Exercise" positionX="-63" positionY="-18" width="128" height="165"/>
+        <element name="Exercise" positionX="-63" positionY="-18" width="128" height="150"/>
         <element name="Gym" positionX="-54" positionY="63" width="128" height="75"/>
         <element name="Training" positionX="-45" positionY="63" width="128" height="90"/>
         <element name="User" positionX="-45" positionY="72" width="128" height="90"/>
-        <element name="Workout" positionX="-54" positionY="-9" width="128" height="105"/>
-        <element name="WorkoutItem" positionX="-36" positionY="9" width="128" height="165"/>
+        <element name="Workout" positionX="-54" positionY="-9" width="128" height="120"/>
+        <element name="WorkoutItem" positionX="-36" positionY="9" width="128" height="150"/>
     </elements>
 </model>

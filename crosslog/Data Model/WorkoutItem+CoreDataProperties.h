@@ -18,7 +18,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, retain) NSString *backendId;
 @property (nullable, nonatomic, retain) NSNumber *count;
-@property (nullable, nonatomic, retain) NSNumber *extraWeight;
 @property (nullable, nonatomic, retain) NSNumber *minCount;
 @property (nullable, nonatomic, retain) NSNumber *units;
 @property (nullable, nonatomic, retain) NSNumber *weight;

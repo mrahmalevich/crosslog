@@ -16,7 +16,6 @@
 @dynamic abbr;
 @dynamic backendId;
 @dynamic name;
-@dynamic optionalWeighted;
 @dynamic type;
 @dynamic units;
 @dynamic weighted;
