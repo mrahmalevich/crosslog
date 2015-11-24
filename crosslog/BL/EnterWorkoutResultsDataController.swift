@@ -39,10 +39,14 @@ class EnterWorkoutResultsDataController {
     }
     
     func createResultWithTime(time: Int) -> WorkoutResult {
-        let workoutResult = WorkoutResult.MR_createEntityInContext(localContext)
-        workoutResult.backendId = NSUUID().UUIDString
-        workoutResult.user = localContext.objectWithID(UserService.sharedInstance.authorizedUser!.objectID) as? User
-        workoutResult.workout = currentWorkout
+        let user = localContext.objectWithID(UserService.sharedInstance.authorizedUser!.objectID) as? User
+        var workoutResult = WorkoutResult.MR_findFirstWithPredicate(NSPredicate(format: "user = %@ AND workout = %@", user!, currentWorkout!), inContext: localContext)
+        if workoutResult == nil {
+            workoutResult = WorkoutResult.MR_createEntityInContext(localContext)
+            workoutResult.backendId = NSUUID().UUIDString
+            workoutResult.user = localContext.objectWithID(UserService.sharedInstance.authorizedUser!.objectID) as? User
+            workoutResult.workout = currentWorkout
+        }
         workoutResult.time = time
         return workoutResult
     }
