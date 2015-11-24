@@ -8,7 +8,8 @@
 
 #import "User.h"
 #import "Gym.h"
+#import "Exercise.h"
 #import "Training.h"
 #import "Workout.h"
 #import "WorkoutItem.h"
-#import "Exercise.h"
+#import "WorkoutResult.h"

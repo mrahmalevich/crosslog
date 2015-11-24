@@ -56,16 +56,19 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         if (segue.identifier! == "ShowTrainingSegue") {
             let trainingViewController = segue.destinationViewController as! TrainingViewController
             trainingViewController.training = sender as! Training
+        } else if (segue.identifier! == "EnterResultsSegue") {
+            let enterResultsViewController = segue.destinationViewController as! EnterResultViewController
+            enterResultsViewController.training = sender as! Training
         }
     }
     
     // MARK: - Feed cell delegate
     func didPressResultsButtonForFeedCell(cell: FeedCell) {
-        self.performSegueWithIdentifier("ShowResultsSegue", sender: nil)
+        self.performSegueWithIdentifier("ShowResultsSegue", sender: cell.training)
     }
 
     func didPressEnterResultButtonForFeedCell(cell: FeedCell) {
-        self.performSegueWithIdentifier("EnterResultsSegue", sender: nil)
+        self.performSegueWithIdentifier("EnterResultsSegue", sender: cell.training)
     }
     
     // MARK: - UITableView delegate & datasource

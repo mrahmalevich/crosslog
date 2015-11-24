@@ -32,7 +32,7 @@
                                                 <constraint firstAttribute="width" constant="99" id="w4e-CM-RZ5"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -182,7 +182,7 @@ T2B (L-1 Knees –ups)</string>
                                     <constraint firstAttribute="height" constant="21" id="M2R-cn-Rst"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -350,27 +350,26 @@ T2B (L-1 Knees –ups)</string>
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chi-cc-jmP">
-                                <rect key="frame" x="85" y="241" width="150" height="21"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nZm-Kr-sAJ" userLabel="View - Enter Result Content View">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="Sac-21-Opv"/>
-                                    <constraint firstAttribute="height" constant="21" id="d4U-mu-15H"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="chi-cc-jmP" firstAttribute="centerY" secondItem="CJt-vs-43p" secondAttribute="centerY" id="YK4-Ga-itx"/>
-                            <constraint firstItem="chi-cc-jmP" firstAttribute="centerX" secondItem="CJt-vs-43p" secondAttribute="centerX" id="ifh-sG-RXI"/>
+                            <constraint firstItem="Rd9-9t-8hW" firstAttribute="top" secondItem="nZm-Kr-sAJ" secondAttribute="bottom" id="Dn6-ff-qDl"/>
+                            <constraint firstItem="nZm-Kr-sAJ" firstAttribute="top" secondItem="hcL-9y-ePm" secondAttribute="bottom" id="SNB-G6-JCr"/>
+                            <constraint firstAttribute="trailing" secondItem="nZm-Kr-sAJ" secondAttribute="trailing" id="g0H-jA-bbW"/>
+                            <constraint firstItem="nZm-Kr-sAJ" firstAttribute="leading" secondItem="CJt-vs-43p" secondAttribute="leading" id="t4t-LC-vWd"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="resultsContainerView" destination="nZm-Kr-sAJ" id="14l-jF-WZC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4P-tq-LgH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -396,7 +395,7 @@ T2B (L-1 Knees –ups)</string>
                                     <constraint firstAttribute="width" constant="150" id="mQf-QR-jab"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

@@ -44,6 +44,7 @@
         <attribute name="backendId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="results" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WorkoutResult" inverseName="user" inverseEntity="WorkoutResult" syncable="YES"/>
     </entity>
     <entity name="Workout" representedClassName="Workout" syncable="YES">
         <attribute name="backendId" optional="YES" attributeType="String" syncable="YES">
@@ -58,6 +59,7 @@
                 <entry key="relatedByAttribute" value="backendId"/>
             </userInfo>
         </relationship>
+        <relationship name="results" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WorkoutResult" inverseName="workout" inverseEntity="WorkoutResult" syncable="YES"/>
         <relationship name="training" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Training" inverseName="workouts" inverseEntity="Training" syncable="YES"/>
         <userInfo>
             <entry key="relatedByAttribute" value="backendId"/>
@@ -84,12 +86,20 @@
             <entry key="relatedByAttribute" value="backendId"/>
         </userInfo>
     </entity>
+    <entity name="WorkoutResult" representedClassName="WorkoutResult" syncable="YES">
+        <attribute name="backendId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reps" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="results" inverseEntity="User" syncable="YES"/>
+        <relationship name="workout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Workout" inverseName="results" inverseEntity="Workout" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Exercise" positionX="-63" positionY="-18" width="128" height="150"/>
-        <element name="Gym" positionX="-54" positionY="63" width="128" height="75"/>
-        <element name="Training" positionX="-45" positionY="63" width="128" height="90"/>
-        <element name="User" positionX="-45" positionY="72" width="128" height="90"/>
-        <element name="Workout" positionX="-54" positionY="-9" width="128" height="120"/>
-        <element name="WorkoutItem" positionX="-36" positionY="9" width="128" height="150"/>
+        <element name="Exercise" positionX="189" positionY="-249" width="128" height="150"/>
+        <element name="Gym" positionX="-317" positionY="132" width="128" height="75"/>
+        <element name="Training" positionX="-56" positionY="-216" width="128" height="90"/>
+        <element name="User" positionX="-315" positionY="27" width="128" height="103"/>
+        <element name="Workout" positionX="-72" positionY="-30" width="128" height="133"/>
+        <element name="WorkoutItem" positionX="144" positionY="-36" width="128" height="150"/>
+        <element name="WorkoutResult" positionX="-63" positionY="-45" width="128" height="120"/>
     </elements>
 </model>

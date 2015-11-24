@@ -23,6 +23,7 @@ pod 'MBProgressHUD'
 pod 'UIImage+BlurredFrame'
 pod 'SDWebImage'
 pod 'TTTAttributedLabel'
+pod 'RMPickerViewController'
 
 # Debug
 pod 'FLEX', '~> 2.0', :configurations => ['Debug']
