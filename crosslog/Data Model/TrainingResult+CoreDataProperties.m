@@ -1,5 +1,5 @@
 //
-//  User+CoreDataProperties.m
+//  TrainingResult+CoreDataProperties.m
 //  crosslog
 //
 //  Created by Mikhail Rakhmalevich on 26.11.15.
@@ -9,13 +9,13 @@
 //  to delete and recreate this implementation file for your updated model.
 //
 
-#import "User+CoreDataProperties.h"
+#import "TrainingResult+CoreDataProperties.h"
 
-@implementation User (CoreDataProperties)
+@implementation TrainingResult (CoreDataProperties)
 
 @dynamic backendId;
-@dynamic firstName;
-@dynamic lastName;
-@dynamic results;
+@dynamic training;
+@dynamic user;
+@dynamic workoutResults;
 
 @end

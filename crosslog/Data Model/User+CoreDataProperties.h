@@ -2,7 +2,7 @@
 //  User+CoreDataProperties.h
 //  crosslog
 //
-//  Created by Mikhail Rakhmalevich on 24.11.15.
+//  Created by Mikhail Rakhmalevich on 26.11.15.
 //  Copyright © 2015 Mikhail Rakhmalevich. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -13,22 +13,21 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class WorkoutResult;
 @interface User (CoreDataProperties)
 
 @property (nullable, nonatomic, retain) NSString *backendId;
 @property (nullable, nonatomic, retain) NSString *firstName;
 @property (nullable, nonatomic, retain) NSString *lastName;
-@property (nullable, nonatomic, retain) NSSet<WorkoutResult *> *results;
+@property (nullable, nonatomic, retain) NSSet<NSManagedObject *> *results;
 
 @end
 
 @interface User (CoreDataGeneratedAccessors)
 
-- (void)addResultsObject:(WorkoutResult *)value;
-- (void)removeResultsObject:(WorkoutResult *)value;
-- (void)addResults:(NSSet<WorkoutResult *> *)values;
-- (void)removeResults:(NSSet<WorkoutResult *> *)values;
+- (void)addResultsObject:(NSManagedObject *)value;
+- (void)removeResultsObject:(NSManagedObject *)value;
+- (void)addResults:(NSSet<NSManagedObject *> *)values;
+- (void)removeResults:(NSSet<NSManagedObject *> *)values;
 
 @end
 

@@ -2,7 +2,7 @@
 //  Training+CoreDataProperties.m
 //  crosslog
 //
-//  Created by Mikhail Rakhmalevich on 27.10.15.
+//  Created by Mikhail Rakhmalevich on 26.11.15.
 //  Copyright © 2015 Mikhail Rakhmalevich. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -13,8 +13,9 @@
 
 @implementation Training (CoreDataProperties)
 
-@dynamic date;
 @dynamic backendId;
+@dynamic date;
+@dynamic results;
 @dynamic workouts;
 
 @end

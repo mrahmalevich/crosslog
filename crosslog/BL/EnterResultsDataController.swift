@@ -9,16 +9,29 @@
 import Foundation
 import MagicalRecord
 
-class EnterWorkoutResultsDataController {
+class EnterResultsDataController {
     
-    let localContext: NSManagedObjectContext = NSManagedObjectContext.MR_context()
     let training: Training
+    private let trainingResult: TrainingResult
+    private let localContext: NSManagedObjectContext = NSManagedObjectContext.MR_context()
     private(set) var currentWorkout: Workout?
 
     // MARK: - Initialization
     init(training: Training) {
         self.training = localContext.objectWithID(training.objectID) as! Training
         self.currentWorkout = self.training.workouts!.firstObject as? Workout
+     
+        // create training result
+        let user = localContext.objectWithID(UserService.sharedInstance.authorizedUser!.objectID) as? User
+        let trainingResult = TrainingResult.MR_findFirstWithPredicate(NSPredicate(format: "training = %@ AND user = %@", self.training, user!), inContext: localContext)
+        if trainingResult == nil {
+            self.trainingResult = TrainingResult.MR_createEntityInContext(localContext)
+            self.trainingResult.backendId = NSUUID().UUIDString
+            self.trainingResult.training = self.training
+            self.trainingResult.user = user
+        } else {
+            self.trainingResult = trainingResult
+        }
     }
     
     // MARK: - Saving data
@@ -39,13 +52,12 @@ class EnterWorkoutResultsDataController {
     }
     
     func createResultWithTime(time: Int) -> WorkoutResult {
-        let user = localContext.objectWithID(UserService.sharedInstance.authorizedUser!.objectID) as? User
-        var workoutResult = WorkoutResult.MR_findFirstWithPredicate(NSPredicate(format: "user = %@ AND workout = %@", user!, currentWorkout!), inContext: localContext)
+        var workoutResult = WorkoutResult.MR_findFirstWithPredicate(NSPredicate(format: "trainingResult = %@ AND workout = %@", trainingResult, currentWorkout!), inContext: localContext)
         if workoutResult == nil {
             workoutResult = WorkoutResult.MR_createEntityInContext(localContext)
             workoutResult.backendId = NSUUID().UUIDString
-            workoutResult.user = localContext.objectWithID(UserService.sharedInstance.authorizedUser!.objectID) as? User
             workoutResult.workout = currentWorkout
+            workoutResult.trainingResult = trainingResult
         }
         workoutResult.time = time
         return workoutResult

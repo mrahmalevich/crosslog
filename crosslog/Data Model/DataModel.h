@@ -12,4 +12,5 @@
 #import "Training.h"
 #import "Workout.h"
 #import "WorkoutItem.h"
+#import "TrainingResult.h"
 #import "WorkoutResult.h"

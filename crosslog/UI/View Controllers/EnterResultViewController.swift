@@ -14,10 +14,10 @@ class EnterResultViewController: UIViewController, EnterWorkoutResultsViewContro
     
     var training: Training! = nil {
         didSet {
-            self.enterResultsDataController = EnterWorkoutResultsDataController(training: training)
+            self.enterResultsDataController = EnterResultsDataController(training: training)
         }
     }
-    var enterResultsDataController: EnterWorkoutResultsDataController! = nil
+    var enterResultsDataController: EnterResultsDataController! = nil
     weak var currentWorkoutViewController: EnterWorkoutResultsViewController? = nil
     
     // MARK: - Initialization

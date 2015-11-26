@@ -2,7 +2,7 @@
 //  Workout+CoreDataProperties.m
 //  crosslog
 //
-//  Created by Mikhail Rakhmalevich on 24.11.15.
+//  Created by Mikhail Rakhmalevich on 26.11.15.
 //  Copyright © 2015 Mikhail Rakhmalevich. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -17,7 +17,7 @@
 @dynamic comment;
 @dynamic title;
 @dynamic items;
-@dynamic training;
 @dynamic results;
+@dynamic training;
 
 @end

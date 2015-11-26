@@ -10,6 +10,18 @@
 
 @implementation User
 
-// Insert code here to add functionality to your managed object subclass
+- (NSString *)fullName {
+    NSMutableString *resultString = [NSMutableString new];
+    if (self.firstName) {
+        [resultString appendString:self.firstName];
+    }
+    if (self.lastName) {
+        if (self.firstName) {
+            [resultString appendString:@" "];
+        }
+        [resultString appendString:self.lastName];
+    }
+    return [NSString stringWithString:resultString];
+}
 
 @end

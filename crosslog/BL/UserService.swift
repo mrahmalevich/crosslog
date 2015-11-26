@@ -43,6 +43,8 @@ class UserService {
         if user == nil {
             user = User.MR_createEntity()
             user.backendId = templateUserID
+            user.firstName = "Vasisily"
+            user.lastName = "Siniy"
             NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
         }
         self.authorizedUser = user

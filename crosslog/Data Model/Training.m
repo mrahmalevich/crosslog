@@ -2,11 +2,12 @@
 //  Training.m
 //  crosslog
 //
-//  Created by Mikhail Rakhmalevich on 27.10.15.
+//  Created by Mikhail Rakhmalevich on 26.11.15.
 //  Copyright © 2015 Mikhail Rakhmalevich. All rights reserved.
 //
 
 #import "Training.h"
+#import "TrainingResult.h"
 #import "Workout.h"
 #import "WorkoutItem.h"
 #import "Exercise.h"
@@ -31,7 +32,7 @@
         for (WorkoutItem *item in workout.items) {
             NSMutableString *itemString = [NSMutableString new];
             Exercise *exercise = item.exercise;
-
+            
             // # abbr
             [itemString appendString:exercise.abbr];
             // # weight
@@ -41,7 +42,7 @@
             // # count
             NSString *minCountString = item.minCount ? [NSString stringWithFormat:@"%@-", item.minCount] : @"";
             [itemString appendFormat:@" %@%@ %@", minCountString, item.count, [FormattingService exerciseUnitsStringForUnits:[item.units integerValue]]];
-
+            
             [resultString appendFormat:@"\n%@", itemString];
         }
         
@@ -56,5 +57,4 @@
     }
     return [NSString stringWithString:resultString];
 }
-
 @end

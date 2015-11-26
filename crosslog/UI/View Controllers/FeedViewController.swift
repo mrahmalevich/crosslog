@@ -8,7 +8,7 @@
 
 import UIKit
 
-let kFeedCellReuseID: String = "kFeedCell"
+private let kFeedCellReuseID: String = "kFeedCell"
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate, FeedCellDelegate {
     @IBOutlet private weak var tableView: UITableView!
@@ -59,6 +59,9 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         } else if (segue.identifier! == "EnterResultsSegue") {
             let enterResultsViewController = segue.destinationViewController as! EnterResultViewController
             enterResultsViewController.training = sender as! Training
+        } else if (segue.identifier! == "ShowResultsSegue") {
+            let showResultsViewController = segue.destinationViewController as! TrainingResultsViewController
+            showResultsViewController.training = sender as! Training
         }
     }
     

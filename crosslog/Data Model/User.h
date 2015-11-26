@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface User : NSManagedObject
 
-// Insert code here to declare functionality of your managed object subclass
+- (NSString *)fullName;
 
 @end
 
