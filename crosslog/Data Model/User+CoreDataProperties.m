@@ -17,5 +17,6 @@
 @dynamic firstName;
 @dynamic lastName;
 @dynamic results;
+@dynamic gym;
 
 @end

@@ -13,21 +13,23 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class Gym, TrainingResult;
 @interface User (CoreDataProperties)
 
 @property (nullable, nonatomic, retain) NSString *backendId;
 @property (nullable, nonatomic, retain) NSString *firstName;
 @property (nullable, nonatomic, retain) NSString *lastName;
-@property (nullable, nonatomic, retain) NSSet<NSManagedObject *> *results;
+@property (nullable, nonatomic, retain) NSSet<TrainingResult *> *results;
+@property (nullable, nonatomic, retain) Gym *gym;
 
 @end
 
 @interface User (CoreDataGeneratedAccessors)
 
-- (void)addResultsObject:(NSManagedObject *)value;
-- (void)removeResultsObject:(NSManagedObject *)value;
-- (void)addResults:(NSSet<NSManagedObject *> *)values;
-- (void)removeResults:(NSSet<NSManagedObject *> *)values;
+- (void)addResultsObject:(TrainingResult *)value;
+- (void)removeResultsObject:(TrainingResult *)value;
+- (void)addResults:(NSSet<TrainingResult *> *)values;
+- (void)removeResults:(NSSet<TrainingResult *> *)values;
 
 @end
 

@@ -43,8 +43,17 @@ class UserService {
         if user == nil {
             user = User.MR_createEntity()
             user.backendId = templateUserID
-            user.firstName = "Vasisily"
+            user.firstName = "Vasiliy"
             user.lastName = "Siniy"
+            
+            let gym = Gym.MR_createEntity()
+            gym.backendId = "-1000"
+            gym.name = "CROSSFIT REDYAR"
+            gym.photoUrl = "https://pp.vk.me/c624029/v624029334/35b71/irJVLy-6Ur4.jpg"
+            gym.address = "ТРК Комсомолл, 4 этаж, ул. Белинского, 8, Красноярск"
+            gym.phone = "+7 (391) 232-10-47"
+            gym.addUsersObject(user)
+            
             NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
         }
         self.authorizedUser = user

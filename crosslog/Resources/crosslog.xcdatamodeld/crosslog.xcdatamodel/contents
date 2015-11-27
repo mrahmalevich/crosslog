@@ -17,8 +17,12 @@
         </userInfo>
     </entity>
     <entity name="Gym" representedClassName="Gym" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="backendId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="users" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="gym" inverseEntity="User" syncable="YES"/>
     </entity>
     <entity name="Training" representedClassName="Training" syncable="YES">
         <attribute name="backendId" optional="YES" attributeType="String" syncable="YES">
@@ -51,6 +55,7 @@
         <attribute name="backendId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="gym" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Gym" inverseName="users" inverseEntity="Gym" syncable="YES"/>
         <relationship name="results" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TrainingResult" inverseName="user" inverseEntity="TrainingResult" syncable="YES"/>
     </entity>
     <entity name="Workout" representedClassName="Workout" syncable="YES">
@@ -102,12 +107,12 @@
     </entity>
     <elements>
         <element name="Exercise" positionX="-72" positionY="324" width="128" height="150"/>
-        <element name="Gym" positionX="-576" positionY="72" width="128" height="75"/>
+        <element name="Gym" positionX="-576" positionY="72" width="128" height="135"/>
         <element name="Training" positionX="-56" positionY="-216" width="128" height="103"/>
-        <element name="User" positionX="-569" positionY="-58" width="128" height="103"/>
+        <element name="TrainingResult" positionX="-263" positionY="-216" width="128" height="103"/>
+        <element name="User" positionX="-569" positionY="-58" width="128" height="120"/>
         <element name="Workout" positionX="-72" positionY="-30" width="128" height="133"/>
         <element name="WorkoutItem" positionX="-72" positionY="138" width="128" height="150"/>
         <element name="WorkoutResult" positionX="-263" positionY="-28" width="128" height="118"/>
-        <element name="TrainingResult" positionX="-263" positionY="-216" width="128" height="103"/>
     </elements>
 </model>

@@ -45,6 +45,9 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
+        let feedHeader = tableView.tableHeaderView! as! FeedHeaderView
+        feedHeader.gym = UserService.sharedInstance.authorizedUser!.gym!
     }
     
     override func viewDidLayoutSubviews() {

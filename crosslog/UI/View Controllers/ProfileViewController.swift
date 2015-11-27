@@ -6,14 +6,25 @@
 //  Copyright © 2015 Mikhail Rakhmalevich. All rights reserved.
 //
 
-class ProfileViewController: FeedViewController {
+class ProfileViewController: UIViewController {
+    @IBOutlet private weak var tableView: UITableView!
 
 //    var user: User?
     
     // MARK: - Initialization
-    override init(_ coder: NSCoder?) {
-        super.init(coder)
+    required convenience init(coder aDecoder: NSCoder) {
+        self.init(aDecoder)
     }
+    
+    init(_ coder: NSCoder? = nil) {
+        if let coder = coder {
+            super.init(coder: coder)!
+        }
+        else {
+            super.init(nibName: nil, bundle:nil)
+        }
+    }
+    
     
 //    required init?(coder aDecoder: NSCoder) {
 //        super.init(coder: aDecoder)
