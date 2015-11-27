@@ -18,5 +18,6 @@
 @dynamic lastName;
 @dynamic results;
 @dynamic gym;
+@dynamic photoUrl;
 
 @end

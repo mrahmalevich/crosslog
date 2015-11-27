@@ -45,6 +45,7 @@ class UserService {
             user.backendId = templateUserID
             user.firstName = "Vasiliy"
             user.lastName = "Siniy"
+            user.photoUrl = "https://pp.vk.me/c605128/v605128595/3c54/4cp-D2cE_18.jpg"
             
             let gym = Gym.MR_createEntity()
             gym.backendId = "-1000"

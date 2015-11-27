@@ -32,6 +32,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         else {
             super.init(nibName: nil, bundle:nil)
         }
+        
+        self.sessionsController.delegate = self
     }
     
     // MARK: - View lifecycle

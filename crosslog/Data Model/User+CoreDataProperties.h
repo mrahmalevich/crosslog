@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSString *backendId;
 @property (nullable, nonatomic, retain) NSString *firstName;
 @property (nullable, nonatomic, retain) NSString *lastName;
+@property (nullable, nonatomic, retain) NSString *photoUrl;
 @property (nullable, nonatomic, retain) NSSet<TrainingResult *> *results;
 @property (nullable, nonatomic, retain) Gym *gym;
 

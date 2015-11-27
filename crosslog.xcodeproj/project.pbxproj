@@ -31,6 +31,7 @@
 		EC1FDD0B1C04596E00FA185E /* EnterWorkoutResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1FDD0A1C04596E00FA185E /* EnterWorkoutResultsViewController.xib */; };
 		EC43C2501C07314C00AE252F /* Training+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EC43C24D1C07314C00AE252F /* Training+CoreDataProperties.m */; };
 		EC43C2511C07314C00AE252F /* Training.m in Sources */ = {isa = PBXBuildFile; fileRef = EC43C24F1C07314C00AE252F /* Training.m */; };
+		EC43C2541C08726200AE252F /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC43C2531C08726200AE252F /* ProfileHeaderView.swift */; };
 		EC896EAF1BF87C2700A93CF9 /* Gym+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EC896EAC1BF87C2700A93CF9 /* Gym+CoreDataProperties.m */; };
 		EC896EB01BF87C2700A93CF9 /* Gym.m in Sources */ = {isa = PBXBuildFile; fileRef = EC896EAE1BF87C2700A93CF9 /* Gym.m */; };
 		EC8CD00B1BDE94D500D41B24 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8CD00A1BDE94D500D41B24 /* Constants.swift */; };
@@ -93,6 +94,7 @@
 		EC43C24D1C07314C00AE252F /* Training+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Training+CoreDataProperties.m"; sourceTree = "<group>"; };
 		EC43C24E1C07314C00AE252F /* Training.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Training.h; sourceTree = "<group>"; };
 		EC43C24F1C07314C00AE252F /* Training.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Training.m; sourceTree = "<group>"; };
+		EC43C2531C08726200AE252F /* ProfileHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		EC896EAB1BF87C2700A93CF9 /* Gym+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Gym+CoreDataProperties.h"; sourceTree = "<group>"; };
 		EC896EAC1BF87C2700A93CF9 /* Gym+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Gym+CoreDataProperties.m"; sourceTree = "<group>"; };
 		EC896EAD1BF87C2700A93CF9 /* Gym.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gym.h; sourceTree = "<group>"; };
@@ -210,6 +212,15 @@
 			name = XIBs;
 			sourceTree = "<group>";
 		};
+		EC43C2521C08725000AE252F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EC8D66981BD8F40B00E3FE31 /* ProfileViewController.swift */,
+				EC43C2531C08726200AE252F /* ProfileHeaderView.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
 		EC8D66781BD8E28000E3FE31 = {
 			isa = PBXGroup;
 			children = (
@@ -256,9 +267,9 @@
 			children = (
 				EC1FDCD21BFCB91C00FA185E /* AuthorizationViewController.swift */,
 				EC1FDCD41BFCB92A00FA185E /* RegistrationViewController.swift */,
-				EC8D66981BD8F40B00E3FE31 /* ProfileViewController.swift */,
 				EC8D669C1BD8F42600E3FE31 /* SettingsViewController.swift */,
 				EC1FDCEC1C033D0300FA185E /* TrainingViewController.swift */,
+				EC43C2521C08725000AE252F /* Profile */,
 				ECD377201C05D90900A23F67 /* Results Table */,
 				ECD3771F1C05D8EA00A23F67 /* Feed */,
 				EC1FDD051C0457B100FA185E /* Results Entering */,
@@ -532,6 +543,7 @@
 				EC9785C01BDA161F00488F8F /* Exercise.m in Sources */,
 				EC1FDCD51BFCB92A00FA185E /* RegistrationViewController.swift in Sources */,
 				EC8D669D1BD8F42600E3FE31 /* SettingsViewController.swift in Sources */,
+				EC43C2541C08726200AE252F /* ProfileHeaderView.swift in Sources */,
 				EC1FDCD71BFCBF3E00FA185E /* TransitionsMediator.swift in Sources */,
 				EC1FDD031C04546E00FA185E /* WorkoutResult+CoreDataProperties.m in Sources */,
 				EC8CD01B1BDE9AC500D41B24 /* User+CoreDataProperties.m in Sources */,

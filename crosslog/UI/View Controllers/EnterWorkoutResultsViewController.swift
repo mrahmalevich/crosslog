@@ -135,7 +135,7 @@ class EnterWorkoutResultsViewController: UIViewController, UIPickerViewDelegate,
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = NSTextAlignment.Right
         paragraphStyle.tailIndent = kPickerComponentWidth / 2
-        return NSAttributedString(string: String(row), attributes: [NSParagraphStyleAttributeName: paragraphStyle])
+        return NSAttributedString(string: String(format: "%02d", row), attributes: [NSParagraphStyleAttributeName: paragraphStyle])
     }
     
     func pickerView(pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
