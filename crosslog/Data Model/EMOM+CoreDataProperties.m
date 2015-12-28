@@ -1,5 +1,5 @@
 //
-//  Workout+CoreDataProperties.m
+//  EMOM+CoreDataProperties.m
 //  crosslog
 //
 //  Created by Mikhail Rakhmalevich on 27.12.15.
@@ -9,14 +9,12 @@
 //  to delete and recreate this implementation file for your updated model.
 //
 
-#import "Workout+CoreDataProperties.h"
+#import "EMOM+CoreDataProperties.h"
 
-@implementation Workout (CoreDataProperties)
+@implementation EMOM (CoreDataProperties)
 
-@dynamic backendId;
-@dynamic comment;
-@dynamic title;
-@dynamic results;
-@dynamic training;
+@dynamic period;
+@dynamic time;
+@dynamic alternating;
 
 @end

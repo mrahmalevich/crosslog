@@ -54,6 +54,29 @@
 		EC9785C11BDA161F00488F8F /* Workout+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9785BA1BDA161F00488F8F /* Workout+CoreDataProperties.m */; };
 		EC9785C21BDA161F00488F8F /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9785BC1BDA161F00488F8F /* Workout.m */; };
 		ECA06C951C047E6E00C4EB8E /* EnterResultsDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA06C941C047E6E00C4EB8E /* EnterResultsDataController.swift */; };
+		ECAD868B1C301FBA00DD3512 /* TrainingResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECAD868A1C301FBA00DD3512 /* TrainingResultsViewController.xib */; };
+		ECAD86B31C302C1000DD3512 /* CompositeWorkout.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAD869B1C302C1000DD3512 /* CompositeWorkout.m */; };
+		ECAD86B61C302C1000DD3512 /* ConcreteWorkout+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86A11C302C1000DD3512 /* ConcreteWorkout+CoreDataProperties.m */; };
+		ECAD86B71C302C1000DD3512 /* ConcreteWorkout.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86A31C302C1000DD3512 /* ConcreteWorkout.m */; };
+		ECAD86C11C30328F00DD3512 /* AMRAP+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86BE1C30328F00DD3512 /* AMRAP+CoreDataProperties.m */; };
+		ECAD86C21C30328F00DD3512 /* AMRAP.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86C01C30328F00DD3512 /* AMRAP.m */; };
+		ECAD86D71C3032D000DD3512 /* EMOM+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86C41C3032D000DD3512 /* EMOM+CoreDataProperties.m */; };
+		ECAD86D81C3032D000DD3512 /* EMOM.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86C61C3032D000DD3512 /* EMOM.m */; };
+		ECAD86D91C3032D000DD3512 /* TABATA+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86C81C3032D000DD3512 /* TABATA+CoreDataProperties.m */; };
+		ECAD86DA1C3032D000DD3512 /* TABATA.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86CA1C3032D000DD3512 /* TABATA.m */; };
+		ECAD86DB1C3032D000DD3512 /* FGBStyle+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86CC1C3032D000DD3512 /* FGBStyle+CoreDataProperties.m */; };
+		ECAD86DC1C3032D000DD3512 /* FGBStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86CE1C3032D000DD3512 /* FGBStyle.m */; };
+		ECAD86DD1C3032D000DD3512 /* Chipper+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86D01C3032D000DD3512 /* Chipper+CoreDataProperties.m */; };
+		ECAD86DE1C3032D000DD3512 /* Chipper.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86D21C3032D000DD3512 /* Chipper.m */; };
+		ECAD86DF1C3032D000DD3512 /* RFT+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86D41C3032D000DD3512 /* RFT+CoreDataProperties.m */; };
+		ECAD86E01C3032D000DD3512 /* RFT.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86D61C3032D000DD3512 /* RFT.m */; };
+		ECAD86E21C3033FC00DD3512 /* WorkoutConstructor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAD86E11C3033FC00DD3512 /* WorkoutConstructor.storyboard */; };
+		ECAD86E41C3035E900DD3512 /* ChooseProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86E31C3035E900DD3512 /* ChooseProtocolViewController.swift */; };
+		ECAD86E61C30467A00DD3512 /* WorkoutConstructorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86E51C30467A00DD3512 /* WorkoutConstructorViewController.swift */; };
+		ECAD86E81C3046B700DD3512 /* WorkoutConstructorItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86E71C3046B700DD3512 /* WorkoutConstructorItemCell.swift */; };
+		ECAD86EA1C30471500DD3512 /* ItemConstructorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86E91C30471500DD3512 /* ItemConstructorViewController.swift */; };
+		ECAD86EC1C3133BD00DD3512 /* CompositeWorkoutConstructorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86EB1C3133BD00DD3512 /* CompositeWorkoutConstructorViewController.swift */; };
+		ECAD86EF1C313D3C00DD3512 /* CompositeWorkout+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86EE1C313D3C00DD3512 /* CompositeWorkout+CoreDataProperties.m */; };
 		ECD377221C05D92000A23F67 /* TrainingResultsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD377211C05D92000A23F67 /* TrainingResultsCell.swift */; };
 		ECD377241C05DF1900A23F67 /* TrainingResultsDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD377231C05DF1900A23F67 /* TrainingResultsDataController.swift */; };
 		ECD377291C0722D700A23F67 /* TrainingResult+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD377261C0722D700A23F67 /* TrainingResult+CoreDataProperties.m */; };
@@ -131,6 +154,46 @@
 		EC9785BC1BDA161F00488F8F /* Workout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Workout.m; sourceTree = "<group>"; };
 		EC9785C31BDA167E00488F8F /* DataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
 		ECA06C941C047E6E00C4EB8E /* EnterResultsDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterResultsDataController.swift; sourceTree = "<group>"; };
+		ECAD868A1C301FBA00DD3512 /* TrainingResultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrainingResultsViewController.xib; sourceTree = "<group>"; };
+		ECAD869A1C302C1000DD3512 /* CompositeWorkout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompositeWorkout.h; sourceTree = "<group>"; };
+		ECAD869B1C302C1000DD3512 /* CompositeWorkout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompositeWorkout.m; sourceTree = "<group>"; };
+		ECAD86A01C302C1000DD3512 /* ConcreteWorkout+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ConcreteWorkout+CoreDataProperties.h"; sourceTree = "<group>"; };
+		ECAD86A11C302C1000DD3512 /* ConcreteWorkout+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ConcreteWorkout+CoreDataProperties.m"; sourceTree = "<group>"; };
+		ECAD86A21C302C1000DD3512 /* ConcreteWorkout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteWorkout.h; sourceTree = "<group>"; };
+		ECAD86A31C302C1000DD3512 /* ConcreteWorkout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteWorkout.m; sourceTree = "<group>"; };
+		ECAD86BC1C302D5E00DD3512 /* crosslog.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = crosslog.pch; path = crosslog/crosslog.pch; sourceTree = SOURCE_ROOT; };
+		ECAD86BD1C30328E00DD3512 /* AMRAP+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AMRAP+CoreDataProperties.h"; sourceTree = "<group>"; };
+		ECAD86BE1C30328F00DD3512 /* AMRAP+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AMRAP+CoreDataProperties.m"; sourceTree = "<group>"; };
+		ECAD86BF1C30328F00DD3512 /* AMRAP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMRAP.h; sourceTree = "<group>"; };
+		ECAD86C01C30328F00DD3512 /* AMRAP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMRAP.m; sourceTree = "<group>"; };
+		ECAD86C31C3032D000DD3512 /* EMOM+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMOM+CoreDataProperties.h"; sourceTree = "<group>"; };
+		ECAD86C41C3032D000DD3512 /* EMOM+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EMOM+CoreDataProperties.m"; sourceTree = "<group>"; };
+		ECAD86C51C3032D000DD3512 /* EMOM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMOM.h; sourceTree = "<group>"; };
+		ECAD86C61C3032D000DD3512 /* EMOM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMOM.m; sourceTree = "<group>"; };
+		ECAD86C71C3032D000DD3512 /* TABATA+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TABATA+CoreDataProperties.h"; sourceTree = "<group>"; };
+		ECAD86C81C3032D000DD3512 /* TABATA+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TABATA+CoreDataProperties.m"; sourceTree = "<group>"; };
+		ECAD86C91C3032D000DD3512 /* TABATA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABATA.h; sourceTree = "<group>"; };
+		ECAD86CA1C3032D000DD3512 /* TABATA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TABATA.m; sourceTree = "<group>"; };
+		ECAD86CB1C3032D000DD3512 /* FGBStyle+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FGBStyle+CoreDataProperties.h"; sourceTree = "<group>"; };
+		ECAD86CC1C3032D000DD3512 /* FGBStyle+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FGBStyle+CoreDataProperties.m"; sourceTree = "<group>"; };
+		ECAD86CD1C3032D000DD3512 /* FGBStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGBStyle.h; sourceTree = "<group>"; };
+		ECAD86CE1C3032D000DD3512 /* FGBStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGBStyle.m; sourceTree = "<group>"; };
+		ECAD86CF1C3032D000DD3512 /* Chipper+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Chipper+CoreDataProperties.h"; sourceTree = "<group>"; };
+		ECAD86D01C3032D000DD3512 /* Chipper+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Chipper+CoreDataProperties.m"; sourceTree = "<group>"; };
+		ECAD86D11C3032D000DD3512 /* Chipper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chipper.h; sourceTree = "<group>"; };
+		ECAD86D21C3032D000DD3512 /* Chipper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chipper.m; sourceTree = "<group>"; };
+		ECAD86D31C3032D000DD3512 /* RFT+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RFT+CoreDataProperties.h"; sourceTree = "<group>"; };
+		ECAD86D41C3032D000DD3512 /* RFT+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RFT+CoreDataProperties.m"; sourceTree = "<group>"; };
+		ECAD86D51C3032D000DD3512 /* RFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFT.h; sourceTree = "<group>"; };
+		ECAD86D61C3032D000DD3512 /* RFT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFT.m; sourceTree = "<group>"; };
+		ECAD86E11C3033FC00DD3512 /* WorkoutConstructor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WorkoutConstructor.storyboard; sourceTree = "<group>"; };
+		ECAD86E31C3035E900DD3512 /* ChooseProtocolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseProtocolViewController.swift; sourceTree = "<group>"; };
+		ECAD86E51C30467A00DD3512 /* WorkoutConstructorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutConstructorViewController.swift; sourceTree = "<group>"; };
+		ECAD86E71C3046B700DD3512 /* WorkoutConstructorItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutConstructorItemCell.swift; sourceTree = "<group>"; };
+		ECAD86E91C30471500DD3512 /* ItemConstructorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemConstructorViewController.swift; sourceTree = "<group>"; };
+		ECAD86EB1C3133BD00DD3512 /* CompositeWorkoutConstructorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeWorkoutConstructorViewController.swift; sourceTree = "<group>"; };
+		ECAD86ED1C313D3C00DD3512 /* CompositeWorkout+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CompositeWorkout+CoreDataProperties.h"; sourceTree = "<group>"; };
+		ECAD86EE1C313D3C00DD3512 /* CompositeWorkout+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CompositeWorkout+CoreDataProperties.m"; sourceTree = "<group>"; };
 		ECD377211C05D92000A23F67 /* TrainingResultsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingResultsCell.swift; sourceTree = "<group>"; };
 		ECD377231C05DF1900A23F67 /* TrainingResultsDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingResultsDataController.swift; sourceTree = "<group>"; };
 		ECD377251C0722D700A23F67 /* TrainingResult+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TrainingResult+CoreDataProperties.h"; sourceTree = "<group>"; };
@@ -200,6 +263,7 @@
 				EC8D66881BD8E28100E3FE31 /* Main.storyboard */,
 				EC1FDCCF1BFCB6DB00FA185E /* Authorization.storyboard */,
 				EC8D668D1BD8E28100E3FE31 /* LaunchScreen.storyboard */,
+				ECAD86E11C3033FC00DD3512 /* WorkoutConstructor.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -208,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				EC1FDD0A1C04596E00FA185E /* EnterWorkoutResultsViewController.xib */,
+				ECAD868A1C301FBA00DD3512 /* TrainingResultsViewController.xib */,
 			);
 			name = XIBs;
 			sourceTree = "<group>";
@@ -269,6 +334,7 @@
 				EC1FDCD41BFCB92A00FA185E /* RegistrationViewController.swift */,
 				EC8D669C1BD8F42600E3FE31 /* SettingsViewController.swift */,
 				EC1FDCEC1C033D0300FA185E /* TrainingViewController.swift */,
+				ECAD86871C301F2A00DD3512 /* Constructor */,
 				EC43C2521C08725000AE252F /* Profile */,
 				ECD377201C05D90900A23F67 /* Results Table */,
 				ECD3771F1C05D8EA00A23F67 /* Feed */,
@@ -294,6 +360,7 @@
 				EC8D66901BD8E28100E3FE31 /* Info.plist */,
 				EC9785B01BDA161E00488F8F /* crosslog-Bridging-Header.h */,
 				EC1FDCF41C034C5D00FA185E /* Localizable.strings */,
+				ECAD86BC1C302D5E00DD3512 /* crosslog.pch */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -316,6 +383,38 @@
 			isa = PBXGroup;
 			children = (
 				EC9785C31BDA167E00488F8F /* DataModel.h */,
+				ECAD86C31C3032D000DD3512 /* EMOM+CoreDataProperties.h */,
+				ECAD86C41C3032D000DD3512 /* EMOM+CoreDataProperties.m */,
+				ECAD86C51C3032D000DD3512 /* EMOM.h */,
+				ECAD86C61C3032D000DD3512 /* EMOM.m */,
+				ECAD86C71C3032D000DD3512 /* TABATA+CoreDataProperties.h */,
+				ECAD86C81C3032D000DD3512 /* TABATA+CoreDataProperties.m */,
+				ECAD86C91C3032D000DD3512 /* TABATA.h */,
+				ECAD86CA1C3032D000DD3512 /* TABATA.m */,
+				ECAD86CB1C3032D000DD3512 /* FGBStyle+CoreDataProperties.h */,
+				ECAD86CC1C3032D000DD3512 /* FGBStyle+CoreDataProperties.m */,
+				ECAD86CD1C3032D000DD3512 /* FGBStyle.h */,
+				ECAD86CE1C3032D000DD3512 /* FGBStyle.m */,
+				ECAD86CF1C3032D000DD3512 /* Chipper+CoreDataProperties.h */,
+				ECAD86D01C3032D000DD3512 /* Chipper+CoreDataProperties.m */,
+				ECAD86D11C3032D000DD3512 /* Chipper.h */,
+				ECAD86D21C3032D000DD3512 /* Chipper.m */,
+				ECAD86D31C3032D000DD3512 /* RFT+CoreDataProperties.h */,
+				ECAD86D41C3032D000DD3512 /* RFT+CoreDataProperties.m */,
+				ECAD86D51C3032D000DD3512 /* RFT.h */,
+				ECAD86D61C3032D000DD3512 /* RFT.m */,
+				ECAD86BD1C30328E00DD3512 /* AMRAP+CoreDataProperties.h */,
+				ECAD86BE1C30328F00DD3512 /* AMRAP+CoreDataProperties.m */,
+				ECAD86BF1C30328F00DD3512 /* AMRAP.h */,
+				ECAD86C01C30328F00DD3512 /* AMRAP.m */,
+				ECAD869A1C302C1000DD3512 /* CompositeWorkout.h */,
+				ECAD869B1C302C1000DD3512 /* CompositeWorkout.m */,
+				ECAD86ED1C313D3C00DD3512 /* CompositeWorkout+CoreDataProperties.h */,
+				ECAD86EE1C313D3C00DD3512 /* CompositeWorkout+CoreDataProperties.m */,
+				ECAD86A01C302C1000DD3512 /* ConcreteWorkout+CoreDataProperties.h */,
+				ECAD86A11C302C1000DD3512 /* ConcreteWorkout+CoreDataProperties.m */,
+				ECAD86A21C302C1000DD3512 /* ConcreteWorkout.h */,
+				ECAD86A31C302C1000DD3512 /* ConcreteWorkout.m */,
 				EC43C24C1C07314C00AE252F /* Training+CoreDataProperties.h */,
 				EC43C24D1C07314C00AE252F /* Training+CoreDataProperties.m */,
 				EC43C24E1C07314C00AE252F /* Training.h */,
@@ -361,6 +460,18 @@
 				EC1FDCE01C01F9D500FA185E /* Utils */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		ECAD86871C301F2A00DD3512 /* Constructor */ = {
+			isa = PBXGroup;
+			children = (
+				ECAD86E31C3035E900DD3512 /* ChooseProtocolViewController.swift */,
+				ECAD86E51C30467A00DD3512 /* WorkoutConstructorViewController.swift */,
+				ECAD86E71C3046B700DD3512 /* WorkoutConstructorItemCell.swift */,
+				ECAD86E91C30471500DD3512 /* ItemConstructorViewController.swift */,
+				ECAD86EB1C3133BD00DD3512 /* CompositeWorkoutConstructorViewController.swift */,
+			);
+			name = Constructor;
 			sourceTree = "<group>";
 		};
 		ECD3771F1C05D8EA00A23F67 /* Feed */ = {
@@ -445,11 +556,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC1FDD0B1C04596E00FA185E /* EnterWorkoutResultsViewController.xib in Resources */,
+				ECAD868B1C301FBA00DD3512 /* TrainingResultsViewController.xib in Resources */,
 				EC1FDCF21C034C5D00FA185E /* Localizable.strings in Resources */,
 				EC8D668F1BD8E28100E3FE31 /* LaunchScreen.storyboard in Resources */,
 				EC1FDCD11BFCB6DB00FA185E /* Authorization.storyboard in Resources */,
 				EC8D668C1BD8E28100E3FE31 /* Assets.xcassets in Resources */,
 				EC8D668A1BD8E28100E3FE31 /* Main.storyboard in Resources */,
+				ECAD86E21C3033FC00DD3512 /* WorkoutConstructor.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +622,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC1FDCED1C033D0300FA185E /* TrainingViewController.swift in Sources */,
+				ECAD86D71C3032D000DD3512 /* EMOM+CoreDataProperties.m in Sources */,
+				ECAD86EA1C30471500DD3512 /* ItemConstructorViewController.swift in Sources */,
 				ECD377241C05DF1900A23F67 /* TrainingResultsDataController.swift in Sources */,
 				EC9785BE1BDA161F00488F8F /* WorkoutItem.m in Sources */,
 				EC1FDCD31BFCB91C00FA185E /* AuthorizationViewController.swift in Sources */,
@@ -521,22 +636,38 @@
 				ECA06C951C047E6E00C4EB8E /* EnterResultsDataController.swift in Sources */,
 				EC1FDCFC1C0382B700FA185E /* TrainingResultsViewController.swift in Sources */,
 				EC1FDD041C04546E00FA185E /* WorkoutResult.m in Sources */,
+				ECAD86E61C30467A00DD3512 /* WorkoutConstructorViewController.swift in Sources */,
+				ECAD86DA1C3032D000DD3512 /* TABATA.m in Sources */,
 				EC8CD0161BDE99D500D41B24 /* FeedDataController.swift in Sources */,
 				EC43C2511C07314C00AE252F /* Training.m in Sources */,
 				EC1FDCE21C01F9D500FA185E /* FormattingService.swift in Sources */,
 				EC9785BF1BDA161F00488F8F /* Exercise+CoreDataProperties.m in Sources */,
+				ECAD86B71C302C1000DD3512 /* ConcreteWorkout.m in Sources */,
+				ECAD86D91C3032D000DD3512 /* TABATA+CoreDataProperties.m in Sources */,
 				ECD3772A1C0722D700A23F67 /* TrainingResult.m in Sources */,
 				EC43C2501C07314C00AE252F /* Training+CoreDataProperties.m in Sources */,
+				ECAD86D81C3032D000DD3512 /* EMOM.m in Sources */,
+				ECAD86B61C302C1000DD3512 /* ConcreteWorkout+CoreDataProperties.m in Sources */,
 				EC8D66851BD8E28100E3FE31 /* AppDelegate.swift in Sources */,
+				ECAD86DD1C3032D000DD3512 /* Chipper+CoreDataProperties.m in Sources */,
+				ECAD86E81C3046B700DD3512 /* WorkoutConstructorItemCell.swift in Sources */,
 				EC1FDCEB1C033BD000FA185E /* FeedHeaderView.swift in Sources */,
 				EC1FDCDB1BFF386200FA185E /* SharedDataManager.swift in Sources */,
 				EC9785AD1BDA0D8200488F8F /* crosslog.xcdatamodeld in Sources */,
 				ECD377291C0722D700A23F67 /* TrainingResult+CoreDataProperties.m in Sources */,
+				ECAD86EC1C3133BD00DD3512 /* CompositeWorkoutConstructorViewController.swift in Sources */,
 				EC8CD00E1BDE989A00D41B24 /* UserService.swift in Sources */,
 				EC1FDCEF1C03459D00FA185E /* SettingsService.swift in Sources */,
 				EC9785BD1BDA161F00488F8F /* WorkoutItem+CoreDataProperties.m in Sources */,
+				ECAD86B31C302C1000DD3512 /* CompositeWorkout.m in Sources */,
 				EC896EAF1BF87C2700A93CF9 /* Gym+CoreDataProperties.m in Sources */,
+				ECAD86EF1C313D3C00DD3512 /* CompositeWorkout+CoreDataProperties.m in Sources */,
 				EC896EB01BF87C2700A93CF9 /* Gym.m in Sources */,
+				ECAD86E01C3032D000DD3512 /* RFT.m in Sources */,
+				ECAD86DF1C3032D000DD3512 /* RFT+CoreDataProperties.m in Sources */,
+				ECAD86DE1C3032D000DD3512 /* Chipper.m in Sources */,
+				ECAD86E41C3035E900DD3512 /* ChooseProtocolViewController.swift in Sources */,
+				ECAD86DC1C3032D000DD3512 /* FGBStyle.m in Sources */,
 				ECD377221C05D92000A23F67 /* TrainingResultsCell.swift in Sources */,
 				EC1FDCD91BFCDDC900FA185E /* TypeAliases.swift in Sources */,
 				EC1FDCE91C033BC800FA185E /* HeaderView.swift in Sources */,
@@ -544,10 +675,13 @@
 				EC1FDCD51BFCB92A00FA185E /* RegistrationViewController.swift in Sources */,
 				EC8D669D1BD8F42600E3FE31 /* SettingsViewController.swift in Sources */,
 				EC43C2541C08726200AE252F /* ProfileHeaderView.swift in Sources */,
+				ECAD86C21C30328F00DD3512 /* AMRAP.m in Sources */,
 				EC1FDCD71BFCBF3E00FA185E /* TransitionsMediator.swift in Sources */,
 				EC1FDD031C04546E00FA185E /* WorkoutResult+CoreDataProperties.m in Sources */,
 				EC8CD01B1BDE9AC500D41B24 /* User+CoreDataProperties.m in Sources */,
+				ECAD86C11C30328F00DD3512 /* AMRAP+CoreDataProperties.m in Sources */,
 				EC9785C11BDA161F00488F8F /* Workout+CoreDataProperties.m in Sources */,
+				ECAD86DB1C3032D000DD3512 /* FGBStyle+CoreDataProperties.m in Sources */,
 				EC9785C21BDA161F00488F8F /* Workout.m in Sources */,
 				EC8CD00B1BDE94D500D41B24 /* Constants.swift in Sources */,
 				EC1FDD071C0457D100FA185E /* EnterWorkoutResultsViewController.swift in Sources */,
@@ -689,6 +823,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				GCC_PREFIX_HEADER = crosslog/crosslog.pch;
 				INFOPLIST_FILE = crosslog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.mrakhmalevich.crosslog;
@@ -704,6 +839,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				GCC_PREFIX_HEADER = crosslog/crosslog.pch;
 				INFOPLIST_FILE = crosslog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.mrakhmalevich.crosslog;

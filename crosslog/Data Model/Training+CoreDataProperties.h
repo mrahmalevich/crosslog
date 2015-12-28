@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, retain) NSString *backendId;
 @property (nullable, nonatomic, retain) NSDate *date;
+@property (nullable, nonatomic, retain) NSString *comment;
 @property (nullable, nonatomic, retain) NSSet<TrainingResult *> *results;
 @property (nullable, nonatomic, retain) NSOrderedSet<Workout *> *workouts;
 

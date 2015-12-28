@@ -8,8 +8,29 @@
 
 #import "WorkoutItem.h"
 
+#import "crosslog-swift.h"
+
 @implementation WorkoutItem
 
-// Insert code here to add functionality to your managed object subclass
+- (NSString *)itemBody
+{
+    NSMutableString *itemString = [NSMutableString new];
+    
+    // abbr
+    [itemString appendString:self.exercise.abbr];
+    // weight
+    if (self.exercise.weighted.boolValue) {
+        [itemString appendFormat:@" %@ %@", self.weight, [FormattingService weightUnitsString]];
+    }
+    // count
+    NSString *minCountString = self.minCount ? [NSString stringWithFormat:@"%@-", self.minCount] : @"";
+    [itemString appendFormat:@" %@%@ %@", minCountString, self.count, [FormattingService exerciseUnitsStringForUnits:[self.units integerValue]]];
+    // comment
+    if (self.comment.length > 0) {
+        [itemString appendFormat:@"\n%@", self.comment];
+    }
+    
+    return [NSString stringWithString:itemString];
+}
 
 @end

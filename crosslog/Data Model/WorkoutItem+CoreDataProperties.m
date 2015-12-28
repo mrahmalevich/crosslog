@@ -2,7 +2,7 @@
 //  WorkoutItem+CoreDataProperties.m
 //  crosslog
 //
-//  Created by Mikhail Rakhmalevich on 27.10.15.
+//  Created by Mikhail Rakhmalevich on 27.12.15.
 //  Copyright © 2015 Mikhail Rakhmalevich. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -18,6 +18,7 @@
 @dynamic minCount;
 @dynamic units;
 @dynamic weight;
+@dynamic comment;
 @dynamic exercise;
 @dynamic workout;
 

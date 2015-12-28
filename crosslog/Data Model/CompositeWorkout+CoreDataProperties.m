@@ -1,22 +1,18 @@
 //
-//  Training+CoreDataProperties.m
+//  CompositeWorkout+CoreDataProperties.m
 //  crosslog
 //
-//  Created by Mikhail Rakhmalevich on 26.11.15.
+//  Created by Mikhail Rakhmalevich on 28.12.15.
 //  Copyright © 2015 Mikhail Rakhmalevich. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
 //  to delete and recreate this implementation file for your updated model.
 //
 
-#import "Training+CoreDataProperties.h"
+#import "CompositeWorkout+CoreDataProperties.h"
 
-@implementation Training (CoreDataProperties)
+@implementation CompositeWorkout (CoreDataProperties)
 
-@dynamic backendId;
-@dynamic date;
-@dynamic comment;
-@dynamic results;
 @dynamic workouts;
 
 @end

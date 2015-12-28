@@ -1,19 +1,18 @@
 //
-//  Workout.h
+//  CompositeWorkout.h
 //  crosslog
 //
-//  Created by Mikhail Rakhmalevich on 23.10.15.
+//  Created by Mikhail Rakhmalevich on 27.12.15.
 //  Copyright © 2015 Mikhail Rakhmalevich. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreData/CoreData.h>
-
-@class WorkoutItem;
+#import "Workout.h"
+#import "ConcreteWorkout.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Workout : NSManagedObject
+@interface CompositeWorkout : Workout
 
 - (NSString *)workoutBody;
 
@@ -21,4 +20,4 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_ASSUME_NONNULL_END
 
-#import "Workout+CoreDataProperties.h"
+#import "CompositeWorkout+CoreDataProperties.h"

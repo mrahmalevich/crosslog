@@ -1,5 +1,5 @@
 //
-//  Workout+CoreDataProperties.m
+//  Chipper+CoreDataProperties.m
 //  crosslog
 //
 //  Created by Mikhail Rakhmalevich on 27.12.15.
@@ -9,14 +9,9 @@
 //  to delete and recreate this implementation file for your updated model.
 //
 
-#import "Workout+CoreDataProperties.h"
+#import "Chipper+CoreDataProperties.h"
 
-@implementation Workout (CoreDataProperties)
+@implementation Chipper (CoreDataProperties)
 
-@dynamic backendId;
-@dynamic comment;
-@dynamic title;
-@dynamic results;
-@dynamic training;
 
 @end

@@ -1,5 +1,5 @@
 //
-//  Workout+CoreDataProperties.m
+//  FGBStyle+CoreDataProperties.h
 //  crosslog
 //
 //  Created by Mikhail Rakhmalevich on 27.12.15.
@@ -9,14 +9,15 @@
 //  to delete and recreate this implementation file for your updated model.
 //
 
-#import "Workout+CoreDataProperties.h"
+#import "FGBStyle.h"
 
-@implementation Workout (CoreDataProperties)
+NS_ASSUME_NONNULL_BEGIN
 
-@dynamic backendId;
-@dynamic comment;
-@dynamic title;
-@dynamic results;
-@dynamic training;
+@interface FGBStyle (CoreDataProperties)
+
+@property (nullable, nonatomic, retain) NSNumber *rounds;
+@property (nullable, nonatomic, retain) NSNumber *stationTime;
 
 @end
+
+NS_ASSUME_NONNULL_END

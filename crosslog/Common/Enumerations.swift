@@ -25,8 +25,8 @@ enum WeightUnits: Int {
 enum ExerciseUnits: Int {
     case Reps = 0
     case Meters = 1
-    case Seconds = 2
-    case Kalories = 3
+    case Kalories = 2
+    case Seconds = 3
     
     func titleString() -> String {
         switch self {
@@ -34,10 +34,17 @@ enum ExerciseUnits: Int {
             return "reps"
         case .Meters:
             return "meters"
-        case .Seconds:
-            return "secs"
         case .Kalories:
             return "kals"
+        case .Seconds:
+            return "secs"
         }
     }
+}
+
+enum ExerciseType: Int {
+    case Custom = 0
+    case Weightlifting = 1
+    case Gymnastics = 2
+    case Metabolic = 3
 }

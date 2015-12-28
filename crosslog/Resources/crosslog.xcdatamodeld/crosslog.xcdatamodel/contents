@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Xcode 7.0">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Xcode 7.0">
+    <entity name="AMRAP" representedClassName="AMRAP" parentEntity="ConcreteWorkout" syncable="YES">
+        <attribute name="time" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Chipper" representedClassName="Chipper" parentEntity="ConcreteWorkout" syncable="YES"/>
+    <entity name="CompositeWorkout" representedClassName="CompositeWorkout" parentEntity="Workout" syncable="YES">
+        <relationship name="workouts" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="ConcreteWorkout" inverseName="parentWorkout" inverseEntity="ConcreteWorkout" syncable="YES"/>
+    </entity>
+    <entity name="ConcreteWorkout" representedClassName="ConcreteWorkout" isAbstract="YES" parentEntity="Workout" syncable="YES">
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WorkoutItem" inverseName="workout" inverseEntity="WorkoutItem" syncable="YES"/>
+        <relationship name="parentWorkout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CompositeWorkout" inverseName="workouts" inverseEntity="CompositeWorkout" syncable="YES"/>
+    </entity>
+    <entity name="EMOM" representedClassName="EMOM" parentEntity="ConcreteWorkout" syncable="YES">
+        <attribute name="alternating" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="period" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
     <entity name="Exercise" representedClassName="Exercise" syncable="YES">
         <attribute name="abbr" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="backendId" optional="YES" attributeType="String" syncable="YES">
@@ -16,6 +32,10 @@
             <entry key="relatedByAttribute" value="backendId"/>
         </userInfo>
     </entity>
+    <entity name="FGBStyle" representedClassName="FGBStyle" parentEntity="ConcreteWorkout" syncable="YES">
+        <attribute name="rounds" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="stationTime" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
     <entity name="Gym" representedClassName="Gym" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="backendId" optional="YES" attributeType="String" syncable="YES"/>
@@ -24,12 +44,17 @@
         <attribute name="photoUrl" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="users" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="gym" inverseEntity="User" syncable="YES"/>
     </entity>
+    <entity name="RFT" representedClassName="RFT" parentEntity="ConcreteWorkout" syncable="YES">
+        <attribute name="rounds" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="TABATA" representedClassName="TABATA" parentEntity="ConcreteWorkout" syncable="YES"/>
     <entity name="Training" representedClassName="Training" syncable="YES">
         <attribute name="backendId" optional="YES" attributeType="String" syncable="YES">
             <userInfo>
                 <entry key="mappedKeyName" value="id"/>
             </userInfo>
         </attribute>
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES">
             <userInfo>
                 <entry key="dateFormat" value="yyyy-MM-dd"/>
@@ -67,11 +92,6 @@
         </attribute>
         <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="items" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="WorkoutItem" inverseName="workout" inverseEntity="WorkoutItem" syncable="YES">
-            <userInfo>
-                <entry key="relatedByAttribute" value="backendId"/>
-            </userInfo>
-        </relationship>
         <relationship name="results" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WorkoutResult" inverseName="workout" inverseEntity="WorkoutResult" syncable="YES"/>
         <relationship name="training" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Training" inverseName="workouts" inverseEntity="Training" syncable="YES"/>
         <userInfo>
@@ -84,6 +104,7 @@
                 <entry key="mappedKeyName" value="id"/>
             </userInfo>
         </attribute>
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="count" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="minCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="units" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
@@ -94,7 +115,7 @@
                 <entry key="relatedByAttribute" value="backendId"/>
             </userInfo>
         </relationship>
-        <relationship name="workout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Workout" inverseName="items" inverseEntity="Workout" syncable="YES"/>
+        <relationship name="workout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ConcreteWorkout" inverseName="items" inverseEntity="ConcreteWorkout" syncable="YES"/>
         <userInfo>
             <entry key="relatedByAttribute" value="backendId"/>
         </userInfo>
@@ -107,13 +128,21 @@
         <relationship name="workout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Workout" inverseName="results" inverseEntity="Workout" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Exercise" positionX="-72" positionY="324" width="128" height="150"/>
-        <element name="Gym" positionX="-576" positionY="72" width="128" height="135"/>
-        <element name="Training" positionX="-56" positionY="-216" width="128" height="103"/>
+        <element name="Exercise" positionX="-171" positionY="399" width="126" height="28"/>
+        <element name="Gym" positionX="-569" positionY="126" width="128" height="135"/>
+        <element name="Training" positionX="187" positionY="-225" width="128" height="118"/>
         <element name="TrainingResult" positionX="-263" positionY="-216" width="128" height="103"/>
         <element name="User" positionX="-569" positionY="-58" width="128" height="135"/>
-        <element name="Workout" positionX="-72" positionY="-30" width="128" height="133"/>
-        <element name="WorkoutItem" positionX="-72" positionY="138" width="128" height="150"/>
+        <element name="Workout" positionX="9" positionY="35" width="128" height="73"/>
+        <element name="WorkoutItem" positionX="61" positionY="332" width="128" height="73"/>
         <element name="WorkoutResult" positionX="-263" positionY="-28" width="128" height="118"/>
+        <element name="CompositeWorkout" positionX="-119" positionY="162" width="128" height="28"/>
+        <element name="ConcreteWorkout" positionX="108" positionY="153" width="128" height="28"/>
+        <element name="RFT" positionX="279" positionY="306" width="128" height="28"/>
+        <element name="Chipper" positionX="279" positionY="546" width="128" height="28"/>
+        <element name="EMOM" positionX="277" positionY="486" width="128" height="28"/>
+        <element name="AMRAP" positionX="279" positionY="432" width="128" height="28"/>
+        <element name="TABATA" positionX="279" positionY="375" width="128" height="28"/>
+        <element name="FGBStyle" positionX="279" positionY="243" width="128" height="28"/>
     </elements>
 </model>

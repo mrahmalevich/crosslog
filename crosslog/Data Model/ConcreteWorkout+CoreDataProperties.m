@@ -1,5 +1,5 @@
 //
-//  Workout+CoreDataProperties.m
+//  ConcreteWorkout+CoreDataProperties.m
 //  crosslog
 //
 //  Created by Mikhail Rakhmalevich on 27.12.15.
@@ -9,14 +9,11 @@
 //  to delete and recreate this implementation file for your updated model.
 //
 
-#import "Workout+CoreDataProperties.h"
+#import "ConcreteWorkout+CoreDataProperties.h"
 
-@implementation Workout (CoreDataProperties)
+@implementation ConcreteWorkout (CoreDataProperties)
 
-@dynamic backendId;
-@dynamic comment;
-@dynamic title;
-@dynamic results;
-@dynamic training;
+@dynamic items;
+@dynamic parentWorkout;
 
 @end

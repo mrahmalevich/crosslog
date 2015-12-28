@@ -1,5 +1,5 @@
 //
-//  Workout+CoreDataProperties.m
+//  RFT+CoreDataProperties.h
 //  crosslog
 //
 //  Created by Mikhail Rakhmalevich on 27.12.15.
@@ -9,14 +9,14 @@
 //  to delete and recreate this implementation file for your updated model.
 //
 
-#import "Workout+CoreDataProperties.h"
+#import "RFT.h"
 
-@implementation Workout (CoreDataProperties)
+NS_ASSUME_NONNULL_BEGIN
 
-@dynamic backendId;
-@dynamic comment;
-@dynamic title;
-@dynamic results;
-@dynamic training;
+@interface RFT (CoreDataProperties)
+
+@property (nullable, nonatomic, retain) NSNumber *rounds;
 
 @end
+
+NS_ASSUME_NONNULL_END

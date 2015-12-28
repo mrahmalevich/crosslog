@@ -11,6 +11,10 @@
 
 @implementation Workout
 
-// Insert code here to add functionality to your managed object subclass
+- (NSString *)workoutBody
+{
+    NSParameterAssert(@"Should be overriden");
+    return nil;
+}
 
 @end
