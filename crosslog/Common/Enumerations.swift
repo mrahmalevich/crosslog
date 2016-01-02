@@ -48,3 +48,13 @@ enum ExerciseType: Int {
     case Gymnastics = 2
     case Metabolic = 3
 }
+
+enum WorkoutType: Int {
+    case Chipper = 0
+    case RFT = 1
+    case AMRAP = 2
+    case EMOM = 3
+    case TABATA = 4
+    case FGBStyle = 5
+    case Composite = 6
+}

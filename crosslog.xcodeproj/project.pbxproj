@@ -77,6 +77,7 @@
 		ECAD86EA1C30471500DD3512 /* ItemConstructorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86E91C30471500DD3512 /* ItemConstructorViewController.swift */; };
 		ECAD86EC1C3133BD00DD3512 /* CompositeWorkoutConstructorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86EB1C3133BD00DD3512 /* CompositeWorkoutConstructorViewController.swift */; };
 		ECAD86EF1C313D3C00DD3512 /* CompositeWorkout+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86EE1C313D3C00DD3512 /* CompositeWorkout+CoreDataProperties.m */; };
+		ECAD86F11C314C9700DD3512 /* WorkoutConstructorDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD86F01C314C9700DD3512 /* WorkoutConstructorDataController.swift */; };
 		ECD377221C05D92000A23F67 /* TrainingResultsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD377211C05D92000A23F67 /* TrainingResultsCell.swift */; };
 		ECD377241C05DF1900A23F67 /* TrainingResultsDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD377231C05DF1900A23F67 /* TrainingResultsDataController.swift */; };
 		ECD377291C0722D700A23F67 /* TrainingResult+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD377261C0722D700A23F67 /* TrainingResult+CoreDataProperties.m */; };
@@ -194,6 +195,7 @@
 		ECAD86EB1C3133BD00DD3512 /* CompositeWorkoutConstructorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeWorkoutConstructorViewController.swift; sourceTree = "<group>"; };
 		ECAD86ED1C313D3C00DD3512 /* CompositeWorkout+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CompositeWorkout+CoreDataProperties.h"; sourceTree = "<group>"; };
 		ECAD86EE1C313D3C00DD3512 /* CompositeWorkout+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CompositeWorkout+CoreDataProperties.m"; sourceTree = "<group>"; };
+		ECAD86F01C314C9700DD3512 /* WorkoutConstructorDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutConstructorDataController.swift; sourceTree = "<group>"; };
 		ECD377211C05D92000A23F67 /* TrainingResultsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingResultsCell.swift; sourceTree = "<group>"; };
 		ECD377231C05DF1900A23F67 /* TrainingResultsDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingResultsDataController.swift; sourceTree = "<group>"; };
 		ECD377251C0722D700A23F67 /* TrainingResult+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TrainingResult+CoreDataProperties.h"; sourceTree = "<group>"; };
@@ -286,6 +288,23 @@
 			name = Profile;
 			sourceTree = "<group>";
 		};
+		EC7C14551C3826320014B2EE /* Workout Constructor */ = {
+			isa = PBXGroup;
+			children = (
+				ECAD86F01C314C9700DD3512 /* WorkoutConstructorDataController.swift */,
+			);
+			name = "Workout Constructor";
+			sourceTree = "<group>";
+		};
+		EC7C14561C3826760014B2EE /* User Data */ = {
+			isa = PBXGroup;
+			children = (
+				EC8CD00D1BDE989A00D41B24 /* UserService.swift */,
+				EC1FDCEE1C03459D00FA185E /* SettingsService.swift */,
+			);
+			name = "User Data";
+			sourceTree = "<group>";
+		};
 		EC8D66781BD8E28000E3FE31 = {
 			isa = PBXGroup;
 			children = (
@@ -368,11 +387,11 @@
 		EC9785AE1BDA15FE00488F8F /* BL */ = {
 			isa = PBXGroup;
 			children = (
-				EC8CD00D1BDE989A00D41B24 /* UserService.swift */,
+				EC7C14561C3826760014B2EE /* User Data */,
+				EC7C14551C3826320014B2EE /* Workout Constructor */,
 				EC1FDCD61BFCBF3E00FA185E /* TransitionsMediator.swift */,
 				EC8CD0151BDE99D500D41B24 /* FeedDataController.swift */,
 				EC1FDCDA1BFF386200FA185E /* SharedDataManager.swift */,
-				EC1FDCEE1C03459D00FA185E /* SettingsService.swift */,
 				ECA06C941C047E6E00C4EB8E /* EnterResultsDataController.swift */,
 				ECD377231C05DF1900A23F67 /* TrainingResultsDataController.swift */,
 			);
@@ -629,6 +648,7 @@
 				EC1FDCD31BFCB91C00FA185E /* AuthorizationViewController.swift in Sources */,
 				EC1FDCFE1C0382C300FA185E /* EnterResultViewController.swift in Sources */,
 				EC8CD01C1BDE9AC500D41B24 /* User.m in Sources */,
+				ECAD86F11C314C9700DD3512 /* WorkoutConstructorDataController.swift in Sources */,
 				EC8D66991BD8F40B00E3FE31 /* ProfileViewController.swift in Sources */,
 				EC1FDCE71C033BB300FA185E /* FeedCell.swift in Sources */,
 				EC1FDCE41C032E6300FA185E /* Stylesheet.swift in Sources */,

@@ -9,6 +9,8 @@
 #import "Workout.h"
 #import "WorkoutItem.h"
 
+#import "crosslog-swift.h"
+
 @implementation Workout
 
 - (NSString *)workoutBody

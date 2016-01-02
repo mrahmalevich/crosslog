@@ -23,5 +23,12 @@ class WorkoutConstructorViewController: UITableViewController {
             super.init(nibName: nil, bundle:nil)
         }
     }
+    
+    // MARK: - View Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // TODO: Setup header
+    }
 
 }
